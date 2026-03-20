@@ -30,7 +30,6 @@ local upgradeSheetList       = {}
 local cycleIndex             = {}
 
 local indexingDone           = false
-local otherCardsDetected     = false
 local indexedCustomCycles    = {}
 local necessaryCustomCycles  = {}
 
@@ -67,7 +66,7 @@ local OFFICIAL_CYCLE_MAP     = {
   ["the scarlet keys"]                  = true,
   ["the feast of hemlock vale"]         = true,
   ["the drowned city"]                  = true,
-  --["core 2026"]                       = true,
+  ["core 2026"]                         = true,
   --["starters 2026"]                   = true,
   -- standalones / parallels etc.
   ["standalone"]                        = true,
@@ -149,7 +148,6 @@ end
 function buildIndex()
   cardCount           = 0
   indexingDone        = false
-  otherCardsDetected  = false
   indexedCustomCycles = {}
 
   -- process the AllCardsBag itself
@@ -413,8 +411,6 @@ function buildSupplementalIndexes()
 
       -- check if card is not from an official cycle
       if OFFICIAL_CYCLE_MAP[cycleName] ~= true then
-        otherCardsDetected = true
-
         -- overwrite the cycle for easier handling by the playercard panel
         cycleName = "other"
 
@@ -536,7 +532,7 @@ end
 -- inform the player card panel about the presence of other cards (no cycle -> fan-made)
 function updatePlayerCardPanel()
   local panel = GUIDReferenceApi.getObjectByOwnerAndType("Mythos", "PlayerCardPanel")
-  if panel then panel.call("createXML", otherCardsDetected) end
+  if panel then panel.call("createXML") end
 end
 
 ---@return boolean: If true, the bag is currently not indexing and ready to be accessed

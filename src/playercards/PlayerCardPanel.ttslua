@@ -19,13 +19,6 @@ local MISC_BUTTONS_X_OFFSET            = 0.155
 local WEAKNESS_ROW_START               = Vector(0.157, 0.1, 0.666)
 local OTHER_ROW_START                  = Vector(0.605, 0.1, 0.666)
 
--- Size and position information for the Cycle (box) buttons
-local CYCLE_BUTTON_SIZE                = 468
-local CYCLE_BUTTON_START               = Vector(-0.716, 0.1, -0.39)
-local CYCLE_COLUMN_COUNT               = 3
-local CYCLE_BUTTONS_X_OFFSET           = 0.267
-local CYCLE_BUTTONS_Z_OFFSET           = 0.2665
-
 local STARTER_DECK_MODE_SELECTED_COLOR = { 0.2, 0.2, 0.2, 0.8 }
 local TRANSPARENT                      = { 0, 0, 0, 0 }
 
@@ -85,20 +78,6 @@ local CLASS_LIST                       = {
   "Survivor",
   "Neutral"
 }
-local CYCLE_LIST                       = {
-  "Core",
-  "The Dunwich Legacy",
-  "The Path to Carcosa",
-  "The Forgotten Age",
-  "The Circle Undone",
-  "The Dream-Eaters",
-  "The Innsmouth Conspiracy",
-  "Edge of the Earth",
-  "The Scarlet Keys",
-  "The Feast of Hemlock Vale",
-  --"The Drowned City", (not included because button is added via XML currently)
-  "Investigator Packs"
-}
 
 local excludedNonBasicWeaknesses
 local spawnStarterDecks                = false
@@ -140,7 +119,6 @@ function createButtons()
   createUpgradedButtons()
   createWeaknessButtons()
   createOtherButtons()
-  createCycleButtons()
   createClearButton()
   -- Create investigator mode buttons last so the indexes are set when we need to update them
   createInvestigatorModeButtons()
@@ -208,85 +186,50 @@ function createUpgradedButtons()
     upgradedButtonParams.position = buttonPos
     self.createButton(upgradedButtonParams)
     buttonPos.x = buttonPos.x + CLASS_BUTTONS_X_OFFSET
-    self.setVar(upgradedButtonParams.click_function, function(_, _, _) spawnClassCards(class, true) end)
+    self.setVar(upgradedButtonParams.click_function, function() spawnClassCards(class, true) end)
   end
 end
 
 function createWeaknessButtons()
-  local weaknessButtonParams = {
+  local weaknessButtonParams          = {
     function_owner = self,
-    height = CIRCLE_BUTTON_SIZE,
-    width = CIRCLE_BUTTON_SIZE,
-    scale = Vector(0.25, 1, 0.25),
-    color = TRANSPARENT
+    height         = CIRCLE_BUTTON_SIZE,
+    width          = CIRCLE_BUTTON_SIZE,
+    scale          = Vector(0.25, 1, 0.25),
+    color          = TRANSPARENT
   }
-  local buttonPos = WEAKNESS_ROW_START:copy()
+  local buttonPos                     = WEAKNESS_ROW_START:copy()
   weaknessButtonParams.click_function = "spawnWeaknesses"
-  weaknessButtonParams.tooltip = "All Weaknesses"
-  weaknessButtonParams.position = buttonPos
+  weaknessButtonParams.tooltip        = "All Weaknesses"
+  weaknessButtonParams.position       = buttonPos
   self.createButton(weaknessButtonParams)
 
-  buttonPos.x = buttonPos.x + MISC_BUTTONS_X_OFFSET
+  buttonPos.x                         = buttonPos.x + MISC_BUTTONS_X_OFFSET
   weaknessButtonParams.click_function = "spawnRandomWeakness"
-  weaknessButtonParams.tooltip = "Random Basic Weakness\nRight-click to specify a trait"
-  weaknessButtonParams.position = buttonPos
+  weaknessButtonParams.tooltip        = "Random Basic Weakness\nRight-click to specify a trait"
+  weaknessButtonParams.position       = buttonPos
   self.createButton(weaknessButtonParams)
 end
 
 function createOtherButtons()
-  local otherButtonParams = {
+  local otherButtonParams          = {
     function_owner = self,
-    height = CIRCLE_BUTTON_SIZE,
-    width = CIRCLE_BUTTON_SIZE,
-    scale = Vector(0.25, 1, 0.25),
-    color = TRANSPARENT
+    height         = CIRCLE_BUTTON_SIZE,
+    width          = CIRCLE_BUTTON_SIZE,
+    scale          = Vector(0.25, 1, 0.25),
+    color          = TRANSPARENT
   }
-  local buttonPos = OTHER_ROW_START:copy()
+  local buttonPos                  = OTHER_ROW_START:copy()
   otherButtonParams.click_function = "spawnBonded"
-  otherButtonParams.tooltip = "Bonded Cards"
-  otherButtonParams.position = buttonPos
+  otherButtonParams.tooltip        = "Bonded Cards"
+  otherButtonParams.position       = buttonPos
   self.createButton(otherButtonParams)
-  buttonPos.x = buttonPos.x + MISC_BUTTONS_X_OFFSET
-  otherButtonParams.click_function = "spawnUpgradeSheets"
-  otherButtonParams.tooltip = "Customization Upgrade Sheets"
-  otherButtonParams.position = buttonPos
-  self.createButton(otherButtonParams)
-end
 
-function createCycleButtons()
-  local cycleButtonParams = {
-    function_owner = self,
-    height = CYCLE_BUTTON_SIZE,
-    width = CYCLE_BUTTON_SIZE,
-    scale = Vector(0.25, 1, 0.25),
-    color = TRANSPARENT
-  }
-  local buttonPos = CYCLE_BUTTON_START:copy()
-  local rowCount = 0
-  local colCount = 0
-  for _, cycle in ipairs(CYCLE_LIST) do
-    cycleButtonParams.click_function = "spawnCycle" .. cycle
-    cycleButtonParams.position = buttonPos
-    cycleButtonParams.tooltip = cycle
-    self.createButton(cycleButtonParams)
-    self.setVar(cycleButtonParams.click_function, function(_, _, _) spawnCycle(cycle) end)
-    colCount = colCount + 1
-    -- If we've reached the end of a row, shift down and back to the first column
-    if colCount >= CYCLE_COLUMN_COUNT then
-      buttonPos = CYCLE_BUTTON_START:copy()
-      rowCount = rowCount + 1
-      colCount = 0
-      buttonPos.z = buttonPos.z + CYCLE_BUTTONS_Z_OFFSET * rowCount
-      if rowCount == 3 then
-        -- Account for two centered buttons on the final row
-        buttonPos.x = buttonPos.x + CYCLE_BUTTONS_X_OFFSET / 2
-        -- Account for centered button on the final row
-        -- buttonPos.x = buttonPos.x + CYCLE_BUTTONS_X_OFFSET
-      end
-    else
-      buttonPos.x = buttonPos.x + CYCLE_BUTTONS_X_OFFSET
-    end
-  end
+  buttonPos.x                      = buttonPos.x + MISC_BUTTONS_X_OFFSET
+  otherButtonParams.click_function = "spawnUpgradeSheets"
+  otherButtonParams.tooltip        = "Customization Upgrade Sheets"
+  otherButtonParams.position       = buttonPos
+  self.createButton(otherButtonParams)
 end
 
 function createClearButton()
@@ -336,7 +279,7 @@ function createInvestigatorModeButtons()
 end
 
 -- this will be called by the AllCardsBag after indexing
-function createXML(showOtherCardsButton)
+function createXML()
   -- basic XML for the help button
   local xmlTable = {
     {
@@ -372,48 +315,6 @@ function createXML(showOtherCardsButton)
     }
   }
 
-  -- add "The Drowned City" cycle button
-  local TDCButtonXml = {
-    tag = "Panel",
-    attributes = {
-      position = "58.1 65.5 -11",
-      rotation = "0 0 180",
-      height   = "225",
-      width    = "225",
-      scale    = "0.1 0.1 1",
-      onClick  = "spawnTDC"
-    },
-    children = {
-      tag = "Image",
-      attributes = { image = "TheDrownedCity" }
-    }
-  }
-
-  -- center the button if it's the only one
-  if not showOtherCardsButton then
-    TDCButtonXml.attributes.position = "44.25 65.5 -11"
-  end
-  table.insert(xmlTable, TDCButtonXml)
-
-  -- add the "Additional Cards" button if cards without cycle were detected
-  if showOtherCardsButton then
-    local otherCardsButtonXml = {
-      tag = "Panel",
-      attributes = {
-        position = "31.45 65.5 -11",
-        rotation = "0 0 180",
-        height   = "225",
-        width    = "225",
-        scale    = "0.1 0.1 1",
-        onClick  = "spawnOtherCards"
-      },
-      children = {
-        tag = "Image",
-        attributes = { image = "OtherCards" }
-      }
-    }
-    table.insert(xmlTable, otherCardsButtonXml)
-  end
   helpVisibleToPlayers = {}
   self.UI.setXmlTable(xmlTable)
 end
@@ -911,9 +812,9 @@ end
 -- spawn the random weakness
 function spawnSingleWeakness(weaknessId)
   SpawnBag.spawn({
-    name = "randomWeakness",
-    cards = { weaknessId },
+    name      = "randomWeakness",
+    cards     = { weaknessId },
     globalPos = self.positionToWorld(startPositions.randomWeakness),
-    rotation = FACE_UP_ROTATION
+    rotation  = FACE_UP_ROTATION
   })
 end
