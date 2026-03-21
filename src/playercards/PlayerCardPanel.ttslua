@@ -17,18 +17,18 @@ local toggleButtonState               = {
 }
 
 local CHECKMARK_X                     = {
-  Chapter1     = 79,
-  Chapter2     = 52,
-  Other        = 25,
+  Chapter1     = 80,
+  Chapter2     = 53,
+  Other        = 26,
   CardsOnly    = -12,
   StarterDecks = -52
 }
 local CHECKMARK_Y                     = -32
 local CHECKMARK_Z                     = -12
 
-local TB_HEIGHT                       = 170
-local TB_WIDTH_SMALL                  = 515
-local TB_WIDTH_LARGE                  = 760
+local TB_HEIGHT                       = 175
+local TB_WIDTH_SMALL                  = 520
+local TB_WIDTH_LARGE                  = 765
 
 local BUTTON_SCALE                    = Vector(0.25, 1, 0.25)
 
@@ -397,7 +397,7 @@ function createXML()
         active    = toggleButtonState[key],
         text      = "✓",
         rotation  = "0 0 180",
-        fontSize  = 75,
+        fontSize  = 70,
         fontColor = "#000000FF",
         color     = "#000000FF",
         id        = "checkmark_" .. key,
