@@ -424,33 +424,10 @@ function createXML()
   }
   local activeItems = AllCardsBagApi.getFilteredContent(activeChapters)
 
-  -- Build the scroll view
-  local scrollViewXml = {
-    tag = "VerticalScrollView",
-    attributes = {
-      position                      = "45.5 34 -12",
-      rotation                      = "0 0 180",
-      scale                         = "0.1 0.1 1",
-      width                         = 825,
-      height                        = 860,
-      color                         = "#000000CC",
-      scrollSensitivity             = 30,
-      raycastTarget                 = true,
-      horizontalScrollbarVisibility = "AutohideAndExpandViewport",
-      scrollbarColors               = "grey|grey|#C8C8C8|rgba(0.78,0.78,0.78,0.5)"
-    },
-    children = {}
-  }
-
-  local verticalLayoutXml = {
-    tag        = "VerticalLayout",
-    attributes = { height = #activeItems * 35, width = 800 },
-    children   = {}
-  }
-
-  -- Populate the VerticalLayout with text items
+  -- Content for the VerticalLayout
+  local contentList = {}
   for _, name in ipairs(activeItems) do
-    table.insert(verticalLayoutXml.children, {
+    table.insert(contentList, {
       tag        = "Panel",
       attributes = {},
       children   = {
@@ -466,7 +443,35 @@ function createXML()
     })
   end
 
-  table.insert(scrollViewXml.children, verticalLayoutXml)
+  local verticalLayoutXml = {
+    tag        = "VerticalLayout",
+    attributes = { height = #activeItems * 35, width = 800 },
+    children   = contentList
+  }
+
+  -- Build the scroll view
+  local scrollViewXml = {
+    tag = "Panel",
+    attributes = {
+      position = "45.5 34 -12",
+      --rotation = "0 0 180",
+      scale    = "0.1 0.1 1",
+      width    = 820,
+      height   = 860,
+    },
+    children = {
+      {
+        tag = "VerticalScrollView",
+        attributes = {
+          width  = 820,
+          height = 860,
+          color  = "#000000CC"
+        },
+        children = { verticalLayoutXml }
+      }
+    }
+  }
+
   table.insert(xmlTable, scrollViewXml)
 
   -- create checkmarks for toggle buttons
