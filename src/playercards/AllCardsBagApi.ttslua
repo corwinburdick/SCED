@@ -89,9 +89,10 @@ do
     }))
   end
 
-  -- Returns the data for custom investigators for the PlayerCardPanel
-  function AllCardsBagApi.getCustomInvestigatorData()
-    return TableLib.copy(getAllCardsBag().call("getCustomInvestigatorData"))
+  -- Returns the data for investigators for the PlayerCardPanel
+  ---@param filters table Contains the filters
+  function AllCardsBagApi.getInvestigatorData(filters)
+    return TableLib.copy(getAllCardsBag().call("getInvestigatorData", { filters = filters }))
   end
 
   -- Constructs a list of available basic weaknesses by starting with the full pool of basic

@@ -1,40 +1,40 @@
 require("playercards/ReprintGroups")
-local CoroutineLib           = require("util/CoroutineLib")
-local DeckImporterApi        = require("deckbuilder/DeckImporterApi")
-local GUIDReferenceApi       = require("core/GUIDReferenceApi")
-local TableLib               = require("util/TableLib")
+local CoroutineLib          = require("util/CoroutineLib")
+local DeckImporterApi       = require("deckbuilder/DeckImporterApi")
+local GUIDReferenceApi      = require("core/GUIDReferenceApi")
+local TableLib              = require("util/TableLib")
 
 -- local assignment since this is called 2000 times onLoad
-local json_parse             = json.parse
-local string_lower           = string.lower
-local string_startsWith      = string.startsWith
-local table_insert           = table.insert
-local LOCALIZATION_FIELDS    = { "Nickname", "Description", "LuaScript", "LuaScriptState", "XmlUI", "CustomUIAssets" }
+local json_parse            = json.parse
+local string_lower          = string.lower
+local string_startsWith     = string.startsWith
+local table_insert          = table.insert
+local LOCALIZATION_FIELDS   = { "Nickname", "Description", "LuaScript", "LuaScriptState", "XmlUI", "CustomUIAssets" }
 
-local debugSpawnData         = {
+local debugSpawnData        = {
   { id = "01001", pos = { 60, 1.6, 71 }, rot = { 0, 270, 0 }, moveCam = true }
 }
 
 -- card index and sub-indices
-local cardIdIndex            = {}
-local classAndLevelIndex     = {}
-local customInvestigatorData = {}
-local customSignatureDict    = {}
+local cardIdIndex           = {}
+local classAndLevelIndex    = {}
+local investigatorData      = {}
+local signatureDict         = {}
 
-local basicWeaknessList      = {}
-local uniqueWeaknessList     = {}
-local evolvedWeaknessList    = {}
-local bondedList             = {}
-local upgradeSheetList       = {}
+local basicWeaknessList     = {}
+local uniqueWeaknessList    = {}
+local evolvedWeaknessList   = {}
+local bondedList            = {}
+local upgradeSheetList      = {}
 
-local cycleIndex             = {}
+local cycleIndex            = {}
 
-local indexingDone           = false
-local indexedCustomCycles    = {}
-local necessaryCustomCycles  = {}
+local indexingDone          = false
+local indexedCustomCycles   = {}
+local necessaryCustomCycles = {}
 
 -- helper data for class sorting
-local CLASS_TO_VALUE         = {
+local CLASS_TO_VALUE        = {
   Guardian = 1,
   Seeker   = 2,
   Rogue    = 3,
@@ -43,7 +43,7 @@ local CLASS_TO_VALUE         = {
   Neutral  = 99998,
   Mythos   = 99999
 }
-local CLASS_LIST             = {
+local CLASS_LIST            = {
   "Guardian",
   "Seeker",
   "Rogue",
@@ -51,7 +51,7 @@ local CLASS_LIST             = {
   "Survivor",
   "Neutral"
 }
-local CHAPTER_MAP            = {
+local CHAPTER_MAP           = {
   -- core / starters
   ["core"]                              = 1,
   ["revised core"]                      = 1,
@@ -93,7 +93,7 @@ local CHAPTER_MAP            = {
   ["promo"]                             = 0
 }
 -- conversion tables to simplify type sorting
-local TYPE_TO_VALUE          = {
+local TYPE_TO_VALUE         = {
   Investigator = 1,
   Minicard     = 2,
   Asset        = 3,
@@ -122,17 +122,17 @@ end
 
 -- Resets all current bag indexes
 function clearIndexes()
-  indexingDone           = false
-  cardIdIndex            = {}
-  classAndLevelIndex     = {}
-  cycleIndex             = {}
-  customInvestigatorData = {}
-  customSignatureDict    = {}
-  basicWeaknessList      = {}
-  uniqueWeaknessList     = {}
-  evolvedWeaknessList    = {}
-  bondedList             = {}
-  upgradeSheetList       = {}
+  indexingDone        = false
+  cardIdIndex         = {}
+  classAndLevelIndex  = {}
+  cycleIndex          = {}
+  investigatorData    = {}
+  signatureDict       = {}
+  basicWeaknessList   = {}
+  uniqueWeaknessList  = {}
+  evolvedWeaknessList = {}
+  bondedList          = {}
+  upgradeSheetList    = {}
 end
 
 -- Clears the bag indexes and starts the coroutine to rebuild the indexes
@@ -415,7 +415,7 @@ function buildSupplementalIndexes()
 
       -- if this is a minicard without cycle, check the parent card for cycle data
       if not cycleName and md.type == "Minicard" then
-        local parentId = getParentId(cardId)
+        local parentId = getBaseId(cardId)
         local parent = cardIdIndex[parentId]
         if parent and parent.metadata.cycle then
           cycleName = parent.metadata.cycle
@@ -424,30 +424,29 @@ function buildSupplementalIndexes()
 
       cycleName = cleanCycleName(cycleName)
 
-      -- check if card is not from an official cycle (TODO)
-      if not CHAPTER_MAP[cycleName] or CHAPTER_MAP[cycleName] == 2 then
-        -- maybe add to special investigator / minicard index
-        if md.type == "Investigator" then
-          writeToNestedTable(customInvestigatorData, "InvestigatorGroup", cardId)
-          writeToNestedTable(customInvestigatorData, "InvestigatorSubdata", cardId, "cards", cardId)
+      -- add to cycle index
+      writeToNestedTable(cycleIndex, cycleName, cardId)
 
-          -- read the signatures
-          if md.signatures and type(md.signatures) == "table" then
-            for sigId, sigCount in pairs(md.signatures[1] or {}) do
-              customSignatureDict[sigId] = true
+      -- maybe add to special investigator / minicard index
+      if md.type == "Investigator" then
+        local baseId = getBaseId(cardId)
+        writeToNestedTable(investigatorData, baseId, "cards", cardId)
+
+        -- read the signatures
+        if md.signatures and type(md.signatures) == "table" then
+          for sigId, sigCount in pairs(md.signatures[1] or {}) do
+            if not signatureDict[sigId] then
+              signatureDict[sigId] = true
               for i = 1, sigCount do
-                writeToNestedTable(customInvestigatorData, "InvestigatorSubdata", cardId, "signatures", sigId)
+                writeToNestedTable(investigatorData, baseId, "signatures", sigId)
               end
             end
           end
-        elseif md.type == "Minicard" then
-          local parentId = getParentId(cardId)
-          writeToNestedTable(customInvestigatorData, "InvestigatorSubdata", parentId, "minicards", cardId)
         end
+      elseif md.type == "Minicard" then
+        local parentId = getBaseId(cardId)
+        writeToNestedTable(investigatorData, parentId, "minicards", cardId)
       end
-
-      -- add to cycle index
-      writeToNestedTable(cycleIndex, cycleName, cardId)
     end
   end
 end
@@ -485,10 +484,19 @@ end
 
 -- sort by class, cardType, level and then name
 function metadataSortFunction(id1, id2)
+  local base1 = getBaseId(id1)
+  local base2 = getBaseId(id2)
+
+  if base1 == base2 then
+    -- same base card (e.g., "01001" vs "01001-p"), short comes first
+    return string.len(id1) < string.len(id2)
+  end
+
   -- if these cards have manually assigned IDs (5 digit length) instead of Zoop GUIDs, use them for sorting
   if string.len(id1) == 5 and string.len(id2) == 5 then
     return id1 < id2
   end
+
   return generalizedCardComparator(id1, id2, { "class", "cardType", "level", "name" })
 end
 
@@ -515,20 +523,39 @@ function sortIndexes()
   -- sort upgradesheet index
   table.sort(upgradeSheetList)
 
-  -- sort custom investigator / minicard data
-  for _, indexTable in pairs(customInvestigatorData) do
-    table.sort(indexTable, metadataSortFunction)
+  -- sort investigator / minicard data
+  for _, specificData in pairs(investigatorData) do
+    for _, indexTable in pairs(specificData) do
+      table.sort(indexTable, metadataSortFunction)
+    end
   end
 end
 
--- get the parent id for minicards by removing the last two characters
-function getParentId(miniId)
-  return string.sub(miniId, 1, -3)
+-- Removes common suffixes from IDs
+function getBaseId(id)
+  -- First pattern matches -m, -p, -c, or -t at the end
+  -- Second pattern matches -pb, -pf at the end
+  local patterns = { "%-[mpct]$", "%-p[fb]$" }
+  local changed  = true
+  local baseId   = id
+
+  while changed do
+    changed = false
+    for _, pattern in ipairs(patterns) do
+      local newId, count = baseId:gsub(pattern, "")
+      if count > 0 then
+        baseId  = newId
+        changed = true
+      end
+    end
+  end
+
+  return baseId
 end
 
 -- helper function to ensure nested tables are initialized - last argument will be used as table element
 function writeToNestedTable(rootTable, ...)
-  local args = { ... }
+  local args         = { ... }
   local currentTable = rootTable
 
   for i = 1, #args - 1 do
@@ -611,7 +638,7 @@ function getCardsByCycle(params)
   for _, id in ipairs(cycleData) do
     local md = cardIdIndex[id].metadata
     -- only include cards without level if requested (don't include investigators / minicards / signatures though)
-    if (md.level or params.includeNoLevelCards) and md.type ~= "Investigator" and md.type ~= "Minicard" and customSignatureDict[id] ~= true then
+    if (md.level or params.includeNoLevelCards) and md.type ~= "Investigator" and md.type ~= "Minicard" and signatureDict[id] ~= true then
       table_insert(cardList, id)
     end
   end
@@ -648,13 +675,65 @@ function getClassValue(s)
   return classValue
 end
 
-function getCustomInvestigatorData()
+function getInvestigatorData(params)
   if not isIndexReady() then return {} end
 
-  return {
-    InvestigatorGroup   = customInvestigatorData.InvestigatorGroup or {},
-    InvestigatorSubdata = customInvestigatorData.InvestigatorSubdata or {}
-  }
+  local filters      = params.filters or {}
+  local filteredData = {}
+
+  for cardId, data in pairs(investigatorData) do
+    local cardMatches = true
+    local metadata    = cardIdIndex[cardId] and cardIdIndex[cardId].metadata
+
+    if not metadata then
+      -- If there's no metadata for this ID, we skip it if filters are active
+      if next(filters) then cardMatches = false end
+    else
+      -- Filter by class (f)
+      if filters.f and cardMatches then
+        local searchClass   = string_lower(filters.f.value)
+        local cardClass     = string_lower(metadata.class or "")
+        local operator      = filters.f.operator
+        local containsClass = string.find(cardClass, searchClass, 1, true)
+
+        if (operator == ":" and not containsClass) or (operator == "!" and containsClass) then
+          cardMatches = false
+        end
+      end
+
+      -- Filter by Cycle (c)
+      if filters.c and cardMatches then
+        local searchCycle  = string_lower(filters.c.value)
+        local cardCycle    = string_lower(metadata.cycle or "")
+        local operator     = filters.c.operator
+        local cycleMatches = (searchCycle == cardCycle)
+
+        if (operator == ":" and not cycleMatches) or (operator == "!" and cycleMatches) then
+          cardMatches = false
+        end
+      end
+
+      -- Filter by Chapter (h)
+      if filters.h and cardMatches then
+        local searchChapter = tonumber(filters.h.value)
+        local cardChapter   = metadata.chapter or 0
+        local operator      = filters.h.operator
+
+        if (operator == ":" and cardChapter ~= searchChapter) or
+            (operator == "<" and cardChapter >= searchChapter) or
+            (operator == ">" and cardChapter <= searchChapter) or
+            (operator == "!" and cardChapter == searchChapter) then
+          cardMatches = false
+        end
+      end
+    end
+
+    if cardMatches then
+      filteredData[cardId] = data
+    end
+  end
+
+  return filteredData
 end
 
 -- Searches the bag for cards which match the given criteria and returns a list.
@@ -662,6 +741,8 @@ end
 --   name:    String to search for names
 --   exact?:  Whether the name match should be exact
 function getCardsByFilter(params)
+  if not isIndexReady() then return {} end
+
   local filters    = params.filters
   local exact      = params.exact ~= false -- true except when it's set to false
   local results    = {}

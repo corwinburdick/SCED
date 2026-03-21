@@ -1,6 +1,3 @@
----@diagnostic disable: param-type-mismatch
-require("playercards/PlayerCardPanelData")
-
 local AllCardsBagApi                  = require("playercards/AllCardsBagApi")
 local SpawnBag                        = require("playercards/SpawnBag")
 local TableLib                        = require("util/TableLib")
@@ -98,7 +95,6 @@ local CLASS_LIST                      = {
   "Neutral"
 }
 
-local excludedNonBasicWeaknesses
 local helpVisibleToPlayers            = {}
 
 -- USE THESE! Positions and offset shifts accounting for the scale of the panel
@@ -129,7 +125,6 @@ function onLoad(savedData)
     toggleButtonState = saveState.toggleButtonState or toggleButtonState
   end
 
-  buildExcludedWeaknessList()
   createButtons()
 end
 
@@ -153,17 +148,32 @@ function filterListForCycle(list)
   end)
 end
 
--- Build a list of non-basic weaknesses which should be excluded from the last weakness set,
--- including all signature cards and evolved weaknesses.
-function buildExcludedWeaknessList()
-  excludedNonBasicWeaknesses = {}
-  for _, investigator in pairs(INVESTIGATORS) do
-    for _, signatureId in ipairs(investigator.signatures or {}) do
-      excludedNonBasicWeaknesses[signatureId] = true
-    end
+function buildChapterFilterArgument()
+  local c1    = toggleButtonState.Chapter1
+  local c2    = toggleButtonState.Chapter2
+  local other = toggleButtonState.Other
+
+  -- Case 1: All ON or All OFF (No filtering needed)
+  if (c1 and c2 and other) or (not c1 and not c2 and not other) then
+    return nil
   end
-  for _, weaknessId in ipairs(AllCardsBagApi.getEvolvedWeaknesses()) do
-    excludedNonBasicWeaknesses[weaknessId] = true
+
+  -- Case 2: Only one is ON
+  if c1 and not c2 and not other then
+    return { value = 1, operator = ":" }
+  elseif c2 and not c1 and not other then
+    return { value = 2, operator = ":" }
+  elseif other and not c1 and not c2 then
+    return { value = 0, operator = ":" }
+  end
+
+  -- Case 3: Two are ON (Equivalent to "NOT the third one")
+  if c1 and c2 and not other then
+    return { value = 0, operator = "!" } -- Not Chapter 0
+  elseif c1 and other and not c2 then
+    return { value = 2, operator = "!" } -- Not Chapter 2
+  elseif c2 and other and not c1 then
+    return { value = 1, operator = "!" } -- Not Chapter 1
   end
 end
 
@@ -510,78 +520,101 @@ function deleteAll()
 end
 
 -- Spawn an investigator group, based on the current UI setting for either investigators or starter decks
----@param groupName string Name of the group to spawn, matching a key in InvestigatorPanelData
-function spawnInvestigatorGroup(groupName)
+---@param class string Name of the group to spawn, matching a key in InvestigatorPanelData
+function spawnInvestigatorGroup(class)
   prepareToPlaceCards()
   Wait.frames(function()
     if toggleButtonState.StarterDecks then
-      spawnStarters(groupName)
+      spawnStarters(class)
     else
-      spawnInvestigators(groupName)
+      spawnInvestigators(class)
     end
   end, 2)
 end
 
 -- Spawn cards for all investigators in the given group. This creates piles for all defined
 -- investigator cards and minicards as well as the signature cards.
----@param groupName string Name of the group to spawn, matching a key in InvestigatorPanelData
-function spawnInvestigators(groupName)
-  -- handling for custom investigators
-  local customData = AllCardsBagApi.getCustomInvestigatorData()
+---@param class string Name of the group to spawn, matching a key in InvestigatorPanelData
+function spawnInvestigators(class)
+  local investigatorData = AllCardsBagApi.getInvestigatorData({
+    h = buildChapterFilterArgument(),
+    f = { value = class, operator = ":" }
+  })
 
-  -- combine tables
-  local mainData   = TableLib.concat(INVESTIGATOR_GROUPS[groupName], customData.InvestigatorGroup)
-  local subData    = TableLib.merge(INVESTIGATORS, customData.InvestigatorSubdata)
-
-  if next(mainData) == nil or next(subData) == nil then
+  if next(investigatorData) == nil then
     printToAll("No investigator data for selection available.")
     return
   end
 
   local col               = 0
   local row               = 1
-  local investigatorCount = #mainData
+  local investigatorCount = TableLib.getLength(investigatorData)
   local position          = getInvestigatorRowStartPos(investigatorCount, row)
 
-  for _, investigatorName in ipairs(mainData) do
-    -- check if the first card for this investigator passes the cycle filter
-    local investigatorData = subData[investigatorName]
-    local md = AllCardsBagApi.getCardById(investigatorData.cards[1]).metadata
-    if passesChapterFilter(md) then
-      col = col + 1
-      if col > INVESTIGATOR_MAX_COLS then
-        col      = 0
-        row      = row + 1
-        position = getInvestigatorRowStartPos(investigatorCount, row)
-      end
-
-      for _, spawnSpec in ipairs(buildInvestigatorSpawnSpec(investigatorName, investigatorData, position)) do
-        SpawnBag.spawn(spawnSpec)
-      end
-      position:add(investigatorPositionShiftCol)
+  for invId, specificData in pairs(investigatorData) do
+    col = col + 1
+    if col > INVESTIGATOR_MAX_COLS then
+      col      = 0
+      row      = row + 1
+      position = getInvestigatorRowStartPos(investigatorCount, row)
     end
+
+    for _, spawnSpec in ipairs(buildInvestigatorSpawnSpec(invId, specificData, position)) do
+      SpawnBag.spawn(spawnSpec)
+    end
+    position:add(investigatorPositionShiftCol)
   end
   return row
+end
+
+-- Spawns all starter decks (single minicard and investigator card, plus the starter deck) for
+-- investigators in the given group.
+---@param class string Name of the group to spawn, matching a key in InvestigatorPanelData
+function spawnStarters(class)
+  local investigatorData = AllCardsBagApi.getInvestigatorData({
+    h = buildChapterFilterArgument(),
+    f = { value = class, operator = ":" }
+  })
+
+  if next(investigatorData) == nil then
+    printToAll("No investigator data for selection available.")
+    return
+  end
+
+  local col               = 1
+  local row               = 1
+  local investigatorCount = TableLib.getLength(investigatorData)
+  local position          = getInvestigatorRowStartPos(investigatorCount, row)
+
+  for invId, specificData in pairs(investigatorData) do
+    spawnStarterDeck(invId, specificData, position, class)
+    position:add(investigatorPositionShiftCol)
+    col = col + 1
+    if col > INVESTIGATOR_MAX_COLS then
+      col = 1
+      row = row + 1
+      position = getInvestigatorRowStartPos(investigatorCount, row)
+    end
+  end
 end
 
 function getInvestigatorRowStartPos(investigatorCount, row)
   local rowOffset          = Vector(investigatorPositionShiftRow):scale(row - 1)
   local investigatorsInRow = math.min(investigatorCount - INVESTIGATOR_MAX_COLS * (row - 1), INVESTIGATOR_MAX_COLS)
   local colOffset          = Vector(investigatorPositionShiftCol):scale((INVESTIGATOR_MAX_COLS - investigatorsInRow) / 2)
-  local rowStart           = Vector(startPositions.investigator)
-  return rowStart + rowOffset + colOffset
+  return Vector(startPositions.investigator):add(rowOffset):add(colOffset)
 end
 
 -- Creates the spawn spec for the investigator's signature cards.
----@param investigatorName string Name of the investigator, matching a key in InvestigatorPanelData
----@param investigatorData table Spawn definition for the investigator, retrieved from INVESTIGATORS
+---@param invId string ID of the investigator
+---@param specificData table Spawn definition for the investigator, retrieved from INVESTIGATORS
 ---@param position tts__Vector Where to spawn the minicard; investigagor cards will be placed below
-function buildInvestigatorSpawnSpec(investigatorName, investigatorData, position)
+function buildInvestigatorSpawnSpec(invId, specificData, position)
   local sigPos = Vector(position):add(investigatorSignatureOffset)
-  local spawns = buildCommonSpawnSpec(investigatorName, investigatorData, position)
+  local spawns = buildCommonSpawnSpec(invId, specificData, position)
   table.insert(spawns, {
-    name      = investigatorName .. "signatures",
-    cards     = investigatorData.signatures,
+    name      = invId .. "signatures",
+    cards     = specificData.signatures,
     globalPos = self.positionToWorld(sigPos),
     rotation  = FACE_UP_ROTATION
   })
@@ -614,38 +647,12 @@ function buildCommonSpawnSpec(investigatorName, investigatorData, position, inde
   }
 end
 
--- Spawns all starter decks (single minicard and investigator card, plus the starter deck) for
--- investigators in the given group.
----@param class string Name of the group to spawn, matching a key in InvestigatorPanelData
-function spawnStarters(class)
-  local col               = 1
-  local row               = 1
-  local investigatorCount = #INVESTIGATOR_GROUPS[class]
-  local position          = getInvestigatorRowStartPos(investigatorCount, row)
-
-  for _, investigatorName in ipairs(INVESTIGATOR_GROUPS[class]) do
-    -- check if the first card for this investigator passes the cycle filter
-    local investigatorData = INVESTIGATORS[investigatorName]
-    local md = AllCardsBagApi.getCardById(investigatorData.cards[1]).metadata
-    if passesChapterFilter(md) then
-      spawnStarterDeck(investigatorName, investigatorData, position, class)
-      position:add(investigatorPositionShiftCol)
-      col = col + 1
-      if col > INVESTIGATOR_MAX_COLS then
-        col = 1
-        row = row + 1
-        position = getInvestigatorRowStartPos(investigatorCount, row)
-      end
-    end
-  end
-end
-
 -- Spawns the defined starter deck for the given investigator
-function spawnStarterDeck(investigatorName, investigatorData, position, class)
+function spawnStarterDeck(invId, specificData, position, class)
   -- determine investigator ID (in case there are multiple, take the first that matches class to handle Agatha)
   local index, starterDeck
 
-  for i, id in ipairs(investigatorData.cards) do
+  for i, id in ipairs(specificData.cards) do
     local card = AllCardsBagApi.getCardById(id)
     if card and card.metadata and card.metadata.class and card.metadata.class == class then
       index = i
@@ -656,7 +663,7 @@ function spawnStarterDeck(investigatorName, investigatorData, position, class)
 
   if not index then return end
 
-  for _, spawnSpec in ipairs(buildCommonSpawnSpec(investigatorName, investigatorData, position, index)) do
+  for _, spawnSpec in ipairs(buildCommonSpawnSpec(invId, specificData, position, index)) do
     SpawnBag.spawn(spawnSpec)
   end
 
@@ -678,7 +685,7 @@ function spawnStarterDeck(investigatorName, investigatorData, position, class)
     end
 
     SpawnBag.spawn({
-      name      = investigatorName .. "starter",
+      name      = invId .. "starter",
       cards     = cardIdList,
       globalPos = self.positionToWorld(deckPos),
       rotation  = FACE_DOWN_ROTATION
@@ -857,11 +864,11 @@ function spawnWeaknesses()
   prepareToPlaceCards()
 
   -- exclude custom signature weaknesses
-  local customExcludeList = {}
-  local customInvestigatorData = AllCardsBagApi.getCustomInvestigatorData()
-  for investigatorId, invdata in pairs(customInvestigatorData.InvestigatorSubdata or {}) do
+  local excludeList = {}
+  local investigatorData = AllCardsBagApi.getInvestigatorData()
+  for invId, invdata in pairs(investigatorData.subdata or {}) do
     for _, cardId in ipairs(invdata.signatures or {}) do
-      customExcludeList[cardId] = true
+      excludeList[cardId] = true
     end
   end
 
@@ -872,7 +879,7 @@ function spawnWeaknesses()
     if passesChapterFilter(cardMetadata) then
       if cardMetadata.basicWeaknessCount ~= nil and cardMetadata.basicWeaknessCount > 0 then
         table.insert(basicWeaknessList, id)
-      elseif excludedNonBasicWeaknesses[id] == nil and customExcludeList[id] == nil then
+      elseif excludeList[id] == nil then
         table.insert(otherWeaknessList, id)
       end
     end
