@@ -426,17 +426,24 @@ function createXML()
 
   -- Content for the VerticalLayout
   local contentList = {}
-  for _, name in ipairs(activeItems) do
+  for i, name in ipairs(activeItems) do
     table.insert(contentList, {
-      tag        = "Panel",
-      attributes = {},
-      children   = {
+      tag      = "Panel",
+      children = {
         {
-          tag = "Text",
+          tag = "Button",
           attributes = {
-            text     = name,
-            fontSize = 24,
-            color    = "#FFFFFF"
+            text      = name,
+            id        = "item_" .. i,
+            onClick   = "xmlClick_spawnContent",
+            font      = "font_teutonic-arkham",
+            content   = name,
+            height    = 70,
+            width     = 600,
+            fontSize  = 55,
+            outline   = "black",
+            color     = "#C69668CC",
+            textColor = "#000000"
           }
         }
       }
@@ -445,7 +452,11 @@ function createXML()
 
   local verticalLayoutXml = {
     tag        = "VerticalLayout",
-    attributes = { height = #activeItems * 35, width = 800 },
+    attributes = {
+      height   = #activeItems * 100,
+      width    = 800,
+      rotation = "0 0 180"
+    },
     children   = contentList
   }
 
@@ -454,18 +465,21 @@ function createXML()
     tag = "Panel",
     attributes = {
       position = "45.5 34 -12",
-      --rotation = "0 0 180",
       scale    = "0.1 0.1 1",
-      width    = 820,
-      height   = 860,
+      width    = 800,
+      height   = 800
     },
     children = {
       {
-        tag = "VerticalScrollView",
+        -- small hack: turn it into a panel if the scrolling is not needed
+        tag = #activeItems > 8 and "VerticalScrollView" or "Panel",
         attributes = {
-          width  = 820,
-          height = 860,
-          color  = "#000000CC"
+          width                         = 800,
+          height                        = 800,
+          color                         = "#00000000",
+          scrollSensitivity             = 100,
+          scrollbarColors               = "grey|grey|#C8C8C8|rgba(0.78,0.78,0.78,0.5)",
+          horizontalScrollbarVisibility = "AutohideAndExpandViewport"
         },
         children = { verticalLayoutXml }
       }
@@ -494,6 +508,11 @@ function createXML()
 
   helpVisibleToPlayers = {}
   self.UI.setXmlTable(xmlTable)
+end
+
+function xmlClick_spawnContent(_, _, id)
+  local content = self.UI.getAttribute(id, "content")
+  spawnContent(content)
 end
 
 function toggleHelp(_, playerColor)
@@ -531,16 +550,19 @@ end
 function toggleChapter1()
   toggleButtonState.Chapter1 = not toggleButtonState.Chapter1
   recreateToggleButtons()
+  createXML()
 end
 
 function toggleChapter2()
   toggleButtonState.Chapter2 = not toggleButtonState.Chapter2
   recreateToggleButtons()
+  createXML()
 end
 
 function toggleOther()
   toggleButtonState.Other = not toggleButtonState.Other
   recreateToggleButtons()
+  createXML()
 end
 
 function updateCheckmarkStates()
@@ -595,15 +617,26 @@ end
 -- Spawn cards for all investigators in the given group. This creates piles for all defined
 -- investigator cards and minicards as well as the signature cards.
 ---@param class string Name of the group to spawn, matching a key in InvestigatorPanelData
-function spawnInvestigators(class)
-  local investigatorData = AllCardsBagApi.getInvestigatorData({
-    h = buildChapterFilterArgument(),
-    f = { value = class, operator = ":" }
-  })
+function spawnInvestigators(class, cycle)
+  local investigatorData
+
+  if class then
+    investigatorData = AllCardsBagApi.getInvestigatorData({
+      h = buildChapterFilterArgument(),
+      f = { value = class, operator = ":" }
+    })
+  elseif cycle then
+    investigatorData = AllCardsBagApi.getInvestigatorData({
+      h = buildChapterFilterArgument(),
+      c = { value = cycle, operator = ":" }
+    })
+  else
+    return 1
+  end
 
   if next(investigatorData) == nil then
     printToAll("No investigator data for selection available.")
-    return
+    return 1
   end
 
   local col               = 0
@@ -822,26 +855,21 @@ end
 
 -- Spawns the investigator sets and all cards for the given cycle
 ---@param cycle string Name of a cycle, should match the standard used in card metadata
-function spawnCycle(cycle)
+function spawnContent(cycle)
   if not AllCardsBagApi.isIndexReady() then return end
 
-  -- sort custom cards and include cards without level
+  -- TODO: detect if a custom cycle is selected and flip these
   local sortByMetadata      = false
   local includeNoLevelCards = false
-  if cycle == "Other" then
-    sortByMetadata      = true
-    includeNoLevelCards = true
-  end
-
-  local cardList = AllCardsBagApi.getCardsByCycle(cycle, sortByMetadata, includeNoLevelCards)
-
-  prepareToPlaceCards()
-  local rowCount = spawnInvestigators(cycle)
+  local cardList            = AllCardsBagApi.getCardsByCycle(cycle, sortByMetadata, includeNoLevelCards)
 
   if #cardList == 0 then
     printToAll("Didn't find any cards for '" .. cycle .. "'.")
     return
   end
+
+  prepareToPlaceCards()
+  local rowCount = spawnInvestigators(nil, cycle)
 
   -- need to shift the start position for cycle down if there are multiple rows of investigators
   local rowOffset = Vector((rowCount - 1) * investigatorPositionShiftRow)

@@ -452,6 +452,10 @@ function buildSupplementalIndexes()
 end
 
 function toTitleCase(str)
+  if str == "the blob that ate everything else" then
+    return "The Blob that Ate Everything ELSE"
+  end
+
   local exclusions = {
     ["the"] = true,
     ["of"]  = true,
