@@ -393,26 +393,81 @@ function createXML()
         color    = "#00000099"
       },
       children = {
-        tag = "Text",
-        attributes = {
-          id                 = "helpText",
-          rectAlignment      = "MiddleCenter",
-          height             = 480,
-          width              = 1000,
-          scale              = "0.1 0.1 1",
-          fontSize           = 66,
-          color              = "#F5F5F5",
-          backgroundColor    = "#FF0000",
-          alignment          = "MiddleLeft",
-          horizontalOverflow = "wrap",
-          text               = "• Select a group to place cards\n" ..
-              "• Copy the cards you want for your deck\n" ..
-              "• Select a new group to clear the placed cards and see new ones\n" ..
-              "• Clear to remove all cards"
+        {
+          tag = "Text",
+          attributes = {
+            id                 = "helpText",
+            rectAlignment      = "MiddleCenter",
+            height             = 480,
+            width              = 1000,
+            scale              = "0.1 0.1 1",
+            fontSize           = 66,
+            color              = "#F5F5F5",
+            backgroundColor    = "#FF0000",
+            alignment          = "MiddleLeft",
+            horizontalOverflow = "wrap",
+            text               = "• Select a group to place cards\n" ..
+                "• Copy the cards you want for your deck\n" ..
+                "• Select a new group to clear the placed cards and see new ones\n" ..
+                "• Clear to remove all cards"
+          }
         }
       }
     }
   }
+
+  -- Get the list of content names based on current toggle states
+  local activeChapters = {
+    [0] = toggleButtonState.Other,
+    [1] = toggleButtonState.Chapter1,
+    [2] = toggleButtonState.Chapter2,
+  }
+  local activeItems = AllCardsBagApi.getFilteredContent(activeChapters)
+
+  -- Build the scroll view
+  local scrollViewXml = {
+    tag = "VerticalScrollView",
+    attributes = {
+      position                      = "45.5 34 -12",
+      rotation                      = "0 0 180",
+      scale                         = "0.1 0.1 1",
+      width                         = 825,
+      height                        = 860,
+      color                         = "#000000CC",
+      scrollSensitivity             = 30,
+      raycastTarget                 = true,
+      horizontalScrollbarVisibility = "AutohideAndExpandViewport",
+      scrollbarColors               = "grey|grey|#C8C8C8|rgba(0.78,0.78,0.78,0.5)"
+    },
+    children = {}
+  }
+
+  local verticalLayoutXml = {
+    tag        = "VerticalLayout",
+    attributes = { height = #activeItems * 35, width = 800 },
+    children   = {}
+  }
+
+  -- Populate the VerticalLayout with text items
+  for _, name in ipairs(activeItems) do
+    table.insert(verticalLayoutXml.children, {
+      tag        = "Panel",
+      attributes = {},
+      children   = {
+        {
+          tag = "Text",
+          attributes = {
+            text     = name,
+            fontSize = 24,
+            color    = "#FFFFFF"
+          }
+        }
+      }
+    })
+  end
+
+  table.insert(scrollViewXml.children, verticalLayoutXml)
+  table.insert(xmlTable, scrollViewXml)
 
   -- create checkmarks for toggle buttons
   for key, posX in pairs(CHECKMARK_X) do
