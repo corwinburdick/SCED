@@ -863,11 +863,12 @@ function spawnWeaknesses()
 
   prepareToPlaceCards()
 
-  -- exclude custom signature weaknesses
+  -- exclude signature weaknesses
   local excludeList = {}
-  local investigatorData = AllCardsBagApi.getInvestigatorData()
-  for invId, invdata in pairs(investigatorData.subdata or {}) do
-    for _, cardId in ipairs(invdata.signatures or {}) do
+  local investigatorData = AllCardsBagApi.getInvestigatorData({ h = buildChapterFilterArgument() })
+
+  for invId, invData in pairs(investigatorData) do
+    for _, cardId in ipairs(invData.signatures or {}) do
       excludeList[cardId] = true
     end
   end
