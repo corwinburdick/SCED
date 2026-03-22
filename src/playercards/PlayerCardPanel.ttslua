@@ -477,7 +477,7 @@ function createXML()
           width                         = 800,
           height                        = 800,
           color                         = "#00000000",
-          scrollSensitivity             = 100,
+          scrollSensitivity             = 50,
           scrollbarColors               = "grey|grey|#C8C8C8|rgba(0.78,0.78,0.78,0.5)",
           horizontalScrollbarVisibility = "AutohideAndExpandViewport"
         },
@@ -631,12 +631,12 @@ function spawnInvestigators(class, cycle)
       c = { value = cycle, operator = ":" }
     })
   else
-    return 1
+    return 0
   end
 
   if next(investigatorData) == nil then
     printToAll("No investigator data for selection available.")
-    return 1
+    return 0
   end
 
   local col               = 0
@@ -647,7 +647,7 @@ function spawnInvestigators(class, cycle)
   for invId, specificData in pairs(investigatorData) do
     col = col + 1
     if col > INVESTIGATOR_MAX_COLS then
-      col      = 0
+      col      = 1
       row      = row + 1
       position = getInvestigatorRowStartPos(investigatorCount, row)
     end
@@ -684,8 +684,8 @@ function spawnStarters(class)
     position:add(investigatorPositionShiftCol)
     col = col + 1
     if col > INVESTIGATOR_MAX_COLS then
-      col = 1
-      row = row + 1
+      col      = 1
+      row      = row + 1
       position = getInvestigatorRowStartPos(investigatorCount, row)
     end
   end
@@ -858,25 +858,25 @@ end
 function spawnContent(cycle)
   if not AllCardsBagApi.isIndexReady() then return end
 
-  -- TODO: detect if a custom cycle is selected and flip these
-  local sortByMetadata      = false
-  local includeNoLevelCards = false
+  -- TODO: different handling for custom cycles?
+  local sortByMetadata      = true
+  local includeNoLevelCards = true
   local cardList            = AllCardsBagApi.getCardsByCycle(cycle, sortByMetadata, includeNoLevelCards)
-
-  if #cardList == 0 then
-    printToAll("Didn't find any cards for '" .. cycle .. "'.")
-    return
-  end
 
   prepareToPlaceCards()
   local rowCount = spawnInvestigators(nil, cycle)
 
+  if #cardList == 0 and rowCount == 0 then
+    printToAll("Didn't find any cards for '" .. cycle .. "'.")
+    return
+  end
+
   -- need to shift the start position for cycle down if there are multiple rows of investigators
-  local rowOffset = Vector((rowCount - 1) * investigatorPositionShiftRow)
+  local rowOffset     = Vector((rowCount - 1) * investigatorPositionShiftRow)
   local cycleStartPos = Vector(startPositions.cycle):add(rowOffset)
 
   -- potentially don't spawn all cards if there are too many
-  local maxCardCount = (CARD_MAX_ROWS - rowCount * 3) * CARD_MAX_COLS
+  local maxCardCount  = (CARD_MAX_ROWS - rowCount * 3) * CARD_MAX_COLS
   if #cardList > maxCardCount then
     printToAll("Only spawning the first " .. maxCardCount .. " cards from " .. #cardList .. " total cards.")
     cardList = table.pack(table.unpack(cardList, 1, maxCardCount))
