@@ -105,6 +105,12 @@ local TYPE_TO_VALUE         = {
   Treachery    = 7,
   Location     = 8
 }
+-- these "investigators" should not show up in the player card panel
+local HIDDEN_INVESTIGATOR   = {
+  ["04244"]  = true, -- Body of a Yithian
+  ["09080"]  = true, -- Summoned Servitor
+  ["11068b"] = true, -- Great Work / Lost Homunculus
+}
 
 function onLoad()
   self.addContextMenuItem("Rebuild Index", startIndexBuild)
@@ -755,6 +761,11 @@ function getInvestigatorData(params)
       -- If there's no metadata for this ID, we skip it if filters are active
       if next(filters) then cardMatches = false end
     else
+      -- Exceptions for some special cases
+      if HIDDEN_INVESTIGATOR[cardId] then
+        cardMatches = false
+      end
+
       -- Filter by class (f)
       if filters.f and cardMatches then
         local searchClass   = string_lower(filters.f.value)
