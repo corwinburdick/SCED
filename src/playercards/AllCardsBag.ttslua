@@ -457,6 +457,13 @@ function buildSupplementalIndexes()
       end
     end
   end
+
+  -- hard-coded fix for Agatha (different investigator ID, but same signatures)
+  if investigatorData["11007"] and not investigatorData["11007"].signatures then
+    investigatorData["11007"].signatures = investigatorData["11008"].signatures
+  elseif investigatorData["11008"] and not investigatorData["11008"].signatures then
+    investigatorData["11008"].signatures = investigatorData["11007"].signatures
+  end
 end
 
 function toTitleCase(str)

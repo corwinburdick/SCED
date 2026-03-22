@@ -952,7 +952,7 @@ function spawnWeaknesses()
   prepareToPlaceCards()
 
   -- exclude signature weaknesses
-  local excludeList = {}
+  local excludeList      = {}
   local investigatorData = AllCardsBagApi.getInvestigatorData({ h = buildChapterFilterArgument() })
 
   for invId, invData in pairs(investigatorData) do
@@ -961,20 +961,20 @@ function spawnWeaknesses()
     end
   end
 
-  local basicWeaknessList = {}
-  local otherWeaknessList = {}
+  local basicWeaknessList   = {}
+  local otherWeaknessList   = {}
+  local evolvedWeaknessList = filterListForCycle(AllCardsBagApi.getEvolvedWeaknesses())
+  local evolvedWeaknessMap  = TableLib.makeMap(evolvedWeaknessList)
   for _, id in ipairs(AllCardsBagApi.getUniqueWeaknesses()) do
     local cardMetadata = AllCardsBagApi.getCardById(id).metadata
     if passesChapterFilter(cardMetadata) then
-      if cardMetadata.basicWeaknessCount ~= nil and cardMetadata.basicWeaknessCount > 0 then
+      if cardMetadata.basicWeaknessCount and cardMetadata.basicWeaknessCount > 0 then
         table.insert(basicWeaknessList, id)
-      elseif excludeList[id] == nil then
+      elseif not excludeList[id] and not evolvedWeaknessMap[id] then
         table.insert(otherWeaknessList, id)
       end
     end
   end
-
-  local evolvedWeaknessList = filterListForCycle(AllCardsBagApi.getEvolvedWeaknesses())
 
   local groupPos = Vector(startPositions.classCards)
   SpawnBag.spawn({
