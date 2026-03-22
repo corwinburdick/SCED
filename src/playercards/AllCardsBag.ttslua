@@ -52,10 +52,6 @@ local CLASS_LIST            = {
   "Neutral"
 }
 local CHAPTER_MAP           = {
-  -- Chapter 2 - Evergreen
-  ["core 2026"]                         = 2,
-  ["starters 2026"]                     = 2,
-
   -- Chapter 1 - Campaigns
   ["core"]                              = 1,
   ["revised core"]                      = 1,
@@ -89,6 +85,10 @@ local CHAPTER_MAP           = {
   ["pistols and pearls"]                = 1,
   ["aura of faith"]                     = 1,
   ["enthralling encore"]                = 1,
+
+  -- Chapter 2 - Evergreen
+  ["core 2026"]                         = 2,
+  ["starters 2026"]                     = 2,
 
   -- Other
   ["beta"]                              = 0,
@@ -493,27 +493,45 @@ function toTitleCase(str)
   end))
 end
 
+-- Helper: Checks if a cycle actually contains spawnable cards
+function cycleHasSpawnableCards(cycleName)
+  local cycleData = cycleIndex[string.lower(cycleName)]
+  if not cycleData then return false end
+
+  for _, id in ipairs(cycleData) do
+    local md         = cardIdIndex[id].metadata
+    local isNotExtra = md.type ~= "Investigator" and md.type ~= "Minicard" and not signatureDict[id]
+
+    if md.level ~= nil and isNotExtra then
+      return true -- Found at least one, we can stop looking
+    end
+  end
+  return false
+end
+
 -- Expects a table like { [1] = true, [2] = false, [0] = true }
 function getFilteredContent(activeChapters)
   local matches = {}
   local seen    = {}
 
-  -- Pass 1: Add items in CHAPTER_MAP order
-  for cycleName, chapter in pairs(CHAPTER_MAP) do
-    if activeChapters[chapter] and cycleIndex[cycleName] then
+  local function processCycle(cycleName)
+    if seen[cycleName] then return end
+
+    local chapter = CHAPTER_MAP[cycleName] or 0
+    if activeChapters[chapter] and cycleIndex[cycleName] and cycleHasSpawnableCards(cycleName) then
       table.insert(matches, toTitleCase(cycleName))
       seen[cycleName] = true
     end
   end
 
-  -- Pass 2: Add any remaining cycles in cycleIndex not in CHAPTER_MAP
+  -- Pass 1: Fixed Order
+  for cycleName, _ in pairs(CHAPTER_MAP) do
+    processCycle(cycleName)
+  end
+
+  -- Pass 2: Remaining cycles in index
   for cycleName, _ in pairs(cycleIndex) do
-    if not seen[cycleName] then
-      local chapter = CHAPTER_MAP[cycleName] or 0
-      if activeChapters[chapter] then
-        table.insert(matches, toTitleCase(cycleName))
-      end
-    end
+    processCycle(cycleName)
   end
 
   return matches
