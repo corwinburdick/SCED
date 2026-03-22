@@ -545,11 +545,6 @@ function generalizedCardComparator(id1, id2, criteria)
   return id1 < id2
 end
 
--- sorts by level and then name
-function generalSortFunction(id1, id2)
-  return generalizedCardComparator(id1, id2, { "level", "name" })
-end
-
 -- sort by class, cardType, level and then name
 function metadataSortFunction(id1, id2)
   local base1 = getBaseId(id1)
@@ -581,7 +576,7 @@ end
 function sortIndexes()
   -- sort class and level indices
   for _, indexTable in pairs(classAndLevelIndex) do
-    table.sort(indexTable, generalSortFunction)
+    table.sort(indexTable, metadataSortFunction)
   end
 
   -- sort cycle indices

@@ -251,6 +251,7 @@ function createUpgradedButtons()
     upgradedButtonParams.click_function = "spawnUpgraded" .. class
     upgradedButtonParams.position = buttonPos
     self.createButton(upgradedButtonParams)
+
     buttonPos.x = buttonPos.x + CLASS_BUTTONS_X_OFFSET
     self.setVar(upgradedButtonParams.click_function, function() spawnClassCards(class, true) end)
   end
