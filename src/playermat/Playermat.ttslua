@@ -1699,11 +1699,17 @@ function onCollisionEnter(collisionInfo)
       spawnTokensOrShowHelper(object)
 
       if md.id == "02158" or md.id == "01694" or md.id == "90027" or md.id == "60232" or md.id == "12095" then
+        -- Charisma | Charisma | Roland's Directive | Miskatonic Archeology Funding | Charisma
         modifySlot("Ally", localCardPos)
       elseif md.id == "02157" or md.id == "01695" or md.id == "12096" then
+        -- Relic Hunter | Relic Hunter | Relic Hunter |
         modifySlot("Accessory", localCardPos)
       elseif md.id == "10132" then
+        -- Occult Reliquary
         modifySlot("Blursed", localCardPos)
+      elseif md.id == "60478" then
+        -- Arcane Experience
+        modifySlot("Arcane", localCardPos)
       end
     end
 
