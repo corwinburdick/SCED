@@ -1701,8 +1701,6 @@ function setChaosBagState(tokenList)
 
   -- reset bless / curse manager
   BlessCurseManagerApi.removeTakenTokensAndReset()
-
-  printToAll("Chaos Bag set to chosen difficulty.", "Green")
 end
 
 -- spawns the specified chaos token and puts it into the chaos bag

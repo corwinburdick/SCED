@@ -5,8 +5,12 @@ do
 
   -- Respawns the chaos bag with a new state of tokens
   ---@param tokenList table List of chaos token ids
-  function ChaosBagApi.setChaosBagState(tokenList)
+  ---@param disablePrint? boolean True to suppress printing
+  function ChaosBagApi.setChaosBagState(tokenList, disablePrint)
     Global.call("setChaosBagState", tokenList)
+    if not disablePrint then
+      printToAll("Chaos Bag set to chosen difficulty.", "Green")
+    end
   end
 
   -- Returns a list of chaos token ids in the current chaos bag
