@@ -6,20 +6,14 @@
   },
   "Autoraise": true,
   "ColorDiffuse": {
-    "b": 0,
-    "g": 0,
-    "r": 0
-  },
-  "CustomPDF": {
-    "PDFPage": 0,
-    "PDFPageOffset": 0,
-    "PDFPassword": "",
-    "PDFUrl": "https://steamusercontent-a.akamaihd.net/ugc/2115061845793806189/6FC67F9AF9224452E2D8F25E63B88D702B21B0DC/"
+    "b": 1,
+    "g": 1,
+    "r": 1
   },
   "Description": "",
   "DragSelectable": true,
-  "GMNotes": "{\n  \"id\": \"RulesReference\"\n}",
-  "GUID": "d99993",
+  "GMNotes": "",
+  "GUID": "chap2",
   "Grid": true,
   "GridProjection": false,
   "Hands": false,
@@ -30,21 +24,31 @@
   "LuaScript": "",
   "LuaScriptState": "",
   "MeasureMovement": false,
-  "Name": "Custom_PDF",
-  "Nickname": "Rules Reference",
+  "Name": "3DText",
+  "Nickname": "",
   "Snap": true,
   "Sticky": true,
+  "Text": {
+    "OwnerSteamID": 0,
+    "Text": "Chapter 2",
+    "colorstate": {
+      "b": 1,
+      "g": 1,
+      "r": 1
+    },
+    "fontSize": 120
+  },
   "Tooltip": true,
   "Transform": {
-    "posX": -43,
-    "posY": 1.481,
-    "posZ": 89,
-    "rotX": 0,
-    "rotY": 270,
+    "posX": 69,
+    "posY": 1.697,
+    "posZ": -83.33,
+    "rotX": 90,
+    "rotY": 90,
     "rotZ": 0,
-    "scaleX": 4.5,
+    "scaleX": 1,
     "scaleY": 1,
-    "scaleZ": 4.5
+    "scaleZ": 1
   },
   "Value": 0,
   "XmlUI": ""
