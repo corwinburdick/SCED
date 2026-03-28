@@ -1,4 +1,4 @@
-local TableLib             = require("util/TableLib")
+local TableLib = require("util/TableLib")
 
 local class, symbol
 
