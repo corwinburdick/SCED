@@ -14,7 +14,7 @@
   "health": 7,
   "sanity": 8,
   "cycle": "Starters 2026",
-  "extraToken": "Reaction",
+  "extraToken": "None",
   "signatures": [
     {
       "60352": 1,

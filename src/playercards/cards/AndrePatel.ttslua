@@ -1,0 +1,108 @@
+require("playercards/CardsWithHelper")
+local GUIDReferenceApi = require("core/GUIDReferenceApi")
+local PlayermatApi     = require("playermat/PlayermatApi")
+local SearchLib        = require("util/SearchLib")
+local TokenManagerApi  = require("tokens/TokenManagerApi")
+
+-- intentionally global
+hasXML                 = true
+isHelperEnabled        = false
+local updated
+local state
+
+local xmlData          = {
+  Action = { color = "#15693FE6", onClick = "addExtraAction" },
+  ElderSign = { color = "#50A8CEE6", onClick = "elderSignAbility" }
+}
+
+function updateSave()
+  self.script_state = JSON.encode({
+    isHelperEnabled = isHelperEnabled,
+    state = state
+  })
+end
+
+function onLoad(savedData)
+  self.addTag("DoInUpkeep")
+  if savedData and savedData ~= "" then
+    local loadedData = JSON.decode(savedData)
+    isHelperEnabled = loadedData.isHelperEnabled
+    state = loadedData.state
+  else
+    state = { Action = true, ElderSign = true }
+  end
+  if isHelperEnabled then updateDisplay() end
+end
+
+function initialize()
+  setUiState(state)
+  updated = true
+end
+
+function addExtraAction()
+  if not updated then return end
+  updated = false
+
+  local position = self.getPosition()
+  local matColor = PlayermatApi.getMatColorByPosition(position)
+  local mat = GUIDReferenceApi.getObjectByOwnerAndType(matColor, "Playermat")
+  local rotation = mat.getRotation()
+
+  -- find empty action token slots by checking snap points
+  local snaps = mat.getSnapPoints()
+
+  -- get first empty slot in the top row (so the second empty slot because of the ability token)
+  local emptyPos = position -- default to card position
+  for i, snap in ipairs(snaps) do
+    if i > 1 then
+      if snap.tags[1] == "UniversalToken" then
+        local snapPos = mat.positionToWorld(snap.position)
+        local searchResult = SearchLib.atPosition(snapPos, "isUniversalToken")
+        if #searchResult == 0 then
+          emptyPos = snapPos
+          break
+        end
+      end
+    end
+  end
+
+  local callbackName = "updateUniversalActionAbilityToken"
+  local callbackParams = { class = "Rogue", symbol = "Rogue" }
+  TokenManagerApi.spawnToken(emptyPos + Vector(0, 0.7, 0), "universalActionAbility", rotation, callbackName, callbackParams, nil, "Temporary")
+  state = { Action = false, ElderSign = true }
+  setUiState(state)
+  Wait.frames(function() updated = true end, 3)
+  updateSave()
+end
+
+function elderSignAbility()
+  local matColor = PlayermatApi.getMatColorByPosition(self.getPosition())
+  PlayermatApi.updateCounter(matColor, "ResourceCounter", nil, 1)
+end
+
+function setUiState(params)
+  for buttonId, onState in pairs(params) do
+    if onState then
+      self.UI.setAttribute(buttonId, "color", xmlData[buttonId].color)
+      self.UI.setAttribute(buttonId, "onClick", xmlData[buttonId].onClick)
+      self.UI.setAttribute(buttonId, "textColor", "white")
+    else
+      self.UI.setAttribute(buttonId, "color", "#353535E6")
+      self.UI.setAttribute(buttonId, "onClick", "errorMessage")
+      self.UI.setAttribute(buttonId, "textColor", "#A0A0A0")
+    end
+  end
+end
+
+function errorMessage(_, _, triggeringButton)
+  if triggeringButton == "Action" then
+    broadcastToAll("You have already triggered this once this round.", "Red")
+  end
+end
+
+function doInUpkeep()
+  state = { Action = true, ElderSign = true }
+  setUiState(state)
+  updated = true
+  updateSave()
+end
