@@ -7,7 +7,8 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/14081245259891962039/E4F5D0CB82021249C9A054565471EFD1803CD8CE/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0
+      "Type": 0,
+      "UniqueBack": true
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/BloodDrinker.60554.gmnotes",

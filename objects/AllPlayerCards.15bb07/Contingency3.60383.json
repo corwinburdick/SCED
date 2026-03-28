@@ -7,7 +7,8 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/13304939742450016498/AFB43B4E155A683BAD89CB929CEAA4DB23BF9A2C/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0
+      "Type": 0,
+      "UniqueBack": true
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Contingency3.60383.gmnotes",

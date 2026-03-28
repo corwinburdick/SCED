@@ -7,7 +7,8 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/16935092255819484306/D9FE79D7559980F7697D6C6F83615F8B8716220B/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0
+      "Type": 0,
+      "UniqueBack": true
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Levelheaded3.60579.gmnotes",

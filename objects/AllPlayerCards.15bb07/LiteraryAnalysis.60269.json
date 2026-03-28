@@ -7,7 +7,8 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/15401071459066096584/FFBB9CE1C7FB7EE0C85292973D34FAE4E18E9071/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0
+      "Type": 0,
+      "UniqueBack": true
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/LiteraryAnalysis.60269.gmnotes",

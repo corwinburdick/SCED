@@ -7,7 +7,8 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/10125756591974143956/47EFF2A0AF3226DAC00D8828F26C823D47E26BDD/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0
+      "Type": 0,
+      "UniqueBack": true
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Psychoanalysis.60264.gmnotes",

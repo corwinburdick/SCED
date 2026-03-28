@@ -1,16 +1,5 @@
 {
-  "AltLookAngle": {
-    "x": 0,
-    "y": 0,
-    "z": 0
-  },
-  "Autoraise": true,
   "CardID": 917306,
-  "ColorDiffuse": {
-    "b": 0.71324,
-    "g": 0.71324,
-    "r": 0.71324
-  },
   "CustomDeck": {
     "9173": {
       "BackIsHidden": true,
@@ -18,44 +7,21 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/2424696374430632272/9A953338B599473C1631AA82F75004CE941DA8B0/",
       "NumHeight": 7,
       "NumWidth": 10,
-      "Type": 0,
-      "UniqueBack": false
+      "Type": 0
     }
   },
   "Description": "Enemy",
-  "DragSelectable": true,
   "GMNotes_path": "AllPlayerCards.15bb07/Zamacona.541ba9.gmnotes",
   "GUID": "541ba9",
-  "Grid": true,
-  "GridProjection": false,
-  "Hands": true,
-  "HideWhenFaceDown": true,
-  "IgnoreFoW": false,
-  "LayoutGroupSortIndex": 0,
-  "Locked": false,
-  "LuaScript": "",
-  "LuaScriptState": "",
-  "MeasureMovement": false,
   "Name": "Card",
   "Nickname": "Zamacona",
-  "SidewaysCard": false,
-  "Snap": true,
-  "Sticky": true,
   "Tags": [
     "PlayerCard"
   ],
-  "Tooltip": true,
   "Transform": {
-    "posX": 9.325,
-    "posY": 3.548,
-    "posZ": -3.112,
-    "rotX": 0,
     "rotY": 270,
-    "rotZ": 0,
     "scaleX": 1,
     "scaleY": 1,
     "scaleZ": 1
-  },
-  "Value": 0,
-  "XmlUI": ""
+  }
 }

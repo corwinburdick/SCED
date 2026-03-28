@@ -1,13 +1,4 @@
 {
-  "AltLookAngle": {
-    "x": 0,
-    "y": 0,
-    "z": 0
-  },
-  "Autoraise": true,
-  "Bag": {
-    "Order": 0
-  },
   "ColorDiffuse": {
     "b": 0,
     "g": 0.36652,
@@ -2334,27 +2325,13 @@
     "18Derringer.101a41"
   ],
   "ContainedObjects_path": "AllPlayerCards.15bb07",
-  "Description": "",
-  "DragSelectable": true,
-  "GMNotes": "",
   "GUID": "15bb07",
-  "Grid": true,
-  "GridProjection": false,
   "Hands": false,
   "HideWhenFaceDown": false,
-  "IgnoreFoW": false,
-  "LayoutGroupSortIndex": 0,
   "Locked": true,
   "LuaScript": "require(\"playercards/AllCardsBag\")",
-  "LuaScriptState": "",
-  "MaterialIndex": -1,
-  "MeasureMovement": false,
-  "MeshIndex": -1,
   "Name": "Bag",
   "Nickname": "All Player Cards",
-  "Snap": true,
-  "Sticky": true,
-  "Tooltip": true,
   "Transform": {
     "posX": 78,
     "posY": 0.96,
@@ -2365,7 +2342,5 @@
     "scaleX": 1,
     "scaleY": 1,
     "scaleZ": 1
-  },
-  "Value": 0,
-  "XmlUI": ""
+  }
 }

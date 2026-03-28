@@ -1,13 +1,4 @@
 {
-  "AltLookAngle": {
-    "x": 0,
-    "y": 0,
-    "z": 0
-  },
-  "Autoraise": true,
-  "Bag": {
-    "Order": 0
-  },
   "ColorDiffuse": {
     "b": 0.94118,
     "g": 0.12548,
@@ -39,37 +30,16 @@
   ],
   "ContainedObjects_path": "TarotDeckScripted.a230f9",
   "Description": "Right-click for card reading options.",
-  "DragSelectable": true,
-  "GMNotes": "",
   "GUID": "a230f9",
-  "Grid": true,
-  "GridProjection": false,
   "Hands": false,
   "HideWhenFaceDown": false,
-  "IgnoreFoW": false,
-  "LayoutGroupSortIndex": 0,
-  "Locked": false,
   "LuaScript": "require(\"playercards/ScriptedTarot\")",
-  "LuaScriptState": "",
-  "MaterialIndex": -1,
-  "MeasureMovement": false,
-  "MeshIndex": -1,
   "Name": "Bag",
   "Nickname": "Tarot Deck (Scripted)",
-  "Snap": true,
-  "Sticky": true,
-  "Tooltip": true,
   "Transform": {
-    "posX": -58.13,
-    "posY": 1.33,
-    "posZ": -82.27,
-    "rotX": 0,
     "rotY": 90,
-    "rotZ": 0,
     "scaleX": 0.85,
     "scaleY": 0.85,
     "scaleZ": 0.85
-  },
-  "Value": 0,
-  "XmlUI": ""
+  }
 }

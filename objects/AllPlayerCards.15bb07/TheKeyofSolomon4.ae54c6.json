@@ -1,16 +1,5 @@
 {
-  "AltLookAngle": {
-    "x": 0,
-    "y": 0,
-    "z": 0
-  },
-  "Autoraise": true,
   "CardID": 917426,
-  "ColorDiffuse": {
-    "b": 0.71324,
-    "g": 0.71324,
-    "r": 0.71324
-  },
   "CustomDeck": {
     "9174": {
       "BackIsHidden": true,
@@ -18,8 +7,7 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/2424696374430632751/4F8200D4B672882FF609D4B1B9D438C61AF20447/",
       "NumHeight": 7,
       "NumWidth": 10,
-      "Type": 0,
-      "UniqueBack": false
+      "Type": 0
     }
   },
   "CustomUIAssets": [
@@ -40,41 +28,21 @@
     }
   ],
   "Description": "Secrets of the Unknown",
-  "DragSelectable": true,
   "GMNotes_path": "AllPlayerCards.15bb07/TheKeyofSolomon4.ae54c6.gmnotes",
   "GUID": "ae54c6",
-  "Grid": true,
-  "GridProjection": false,
-  "Hands": true,
-  "HideWhenFaceDown": true,
-  "IgnoreFoW": false,
-  "LayoutGroupSortIndex": 0,
-  "Locked": false,
   "LuaScript": "require(\"playercards/cards/KeyofSolomon4\")",
-  "LuaScriptState": "",
-  "MeasureMovement": false,
   "Name": "Card",
   "Nickname": "The Key of Solomon (4)",
-  "SidewaysCard": false,
-  "Snap": true,
-  "Sticky": true,
   "Tags": [
     "Asset",
     "CardWithHelper",
     "PlayerCard"
   ],
-  "Tooltip": true,
   "Transform": {
-    "posX": 13.082,
-    "posY": 3.548,
-    "posZ": -7.159,
-    "rotX": 0,
     "rotY": 270,
-    "rotZ": 0,
     "scaleX": 1,
     "scaleY": 1,
     "scaleZ": 1
   },
-  "Value": 0,
-  "XmlUI": "\u003cInclude src=\"playercards/KeyofSolomon4.xml\"/\u003e"
+  "XmlUI": "<Include src=\"playercards/KeyofSolomon4.xml\"/>"
 }

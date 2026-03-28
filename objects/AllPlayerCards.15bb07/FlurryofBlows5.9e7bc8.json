@@ -1,16 +1,5 @@
 {
-  "AltLookAngle": {
-    "x": 0,
-    "y": 0,
-    "z": 0
-  },
-  "Autoraise": true,
   "CardID": 917329,
-  "ColorDiffuse": {
-    "b": 0.71324,
-    "g": 0.71324,
-    "r": 0.71324
-  },
   "CustomDeck": {
     "9173": {
       "BackIsHidden": true,
@@ -18,44 +7,20 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/2424696374430632272/9A953338B599473C1631AA82F75004CE941DA8B0/",
       "NumHeight": 7,
       "NumWidth": 10,
-      "Type": 0,
-      "UniqueBack": false
+      "Type": 0
     }
   },
-  "Description": "",
-  "DragSelectable": true,
   "GMNotes_path": "AllPlayerCards.15bb07/FlurryofBlows5.9e7bc8.gmnotes",
   "GUID": "9e7bc8",
-  "Grid": true,
-  "GridProjection": false,
-  "Hands": true,
-  "HideWhenFaceDown": true,
-  "IgnoreFoW": false,
-  "LayoutGroupSortIndex": 0,
-  "Locked": false,
-  "LuaScript": "",
-  "LuaScriptState": "",
-  "MeasureMovement": false,
   "Name": "Card",
   "Nickname": "Flurry of Blows (5)",
-  "SidewaysCard": false,
-  "Snap": true,
-  "Sticky": true,
   "Tags": [
     "PlayerCard"
   ],
-  "Tooltip": true,
   "Transform": {
-    "posX": 64.793,
-    "posY": 3.67,
-    "posZ": -22.083,
-    "rotX": 0,
     "rotY": 270,
-    "rotZ": 0,
     "scaleX": 1,
     "scaleY": 1,
     "scaleZ": 1
-  },
-  "Value": 0,
-  "XmlUI": ""
+  }
 }
