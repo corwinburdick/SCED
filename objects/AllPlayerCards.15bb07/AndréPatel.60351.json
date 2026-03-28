@@ -11,13 +11,27 @@
       "UniqueBack": true
     }
   },
+  "CustomUIAssets": [
+    {
+      "Name": "font_arkhamicons",
+      "Type": 1,
+      "URL": "https://steamusercontent-a.akamaihd.net/ugc/16577956848173876106/49B31DA9BD35FC54A6B33926EA220FBBB2CAD038/"
+    },
+    {
+      "Name": "token-blue",
+      "Type": 0,
+      "URL": "https://steamusercontent-a.akamaihd.net/ugc/13603340044969501197/DC8691C239014FE7DDABB886BB1D383C05DC490F/"
+    }
+  ],
   "Description": "The Film Star",
   "GMNotes_path": "AllPlayerCards.15bb07/AndréPatel.60351.gmnotes",
   "GUID": "60351",
+  "LuaScript": "require(\"playercards/cards/AndrePatel\")",
   "Name": "Card",
   "Nickname": "André Patel",
   "SidewaysCard": true,
   "Tags": [
+    "CardWithHelper",
     "Investigator",
     "PlayerCard"
   ],
@@ -26,5 +40,6 @@
     "scaleX": 1.15,
     "scaleY": 1,
     "scaleZ": 1.15
-  }
+  },
+  "XmlUI": "<Include src=\"playercards/AndrePatel.xml\"/>"
 }
