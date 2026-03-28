@@ -22,7 +22,7 @@
       "UniqueBack": true
     }
   },
-  "Description": "Chapter 1",
+  "Description": "Chapter 1 & Chapter 2",
   "DragSelectable": true,
   "GMNotes": "{\n  \"id\": \"PhaseReference\"\n}",
   "GUID": "68fe54",
@@ -43,7 +43,7 @@
   "Sticky": true,
   "Tooltip": true,
   "Transform": {
-    "posX": -62,
+    "posX": -43,
     "posY": 1.495,
     "posZ": 71,
     "rotX": 0,
