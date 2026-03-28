@@ -4,6 +4,6 @@
   "class": "Neutral",
   "traits": "Flaw.",
   "weakness": true,
-  "basicWeaknessCount": 2,
+  "basicWeaknessCount": 1,
   "cycle": "Core 2026"
 }
