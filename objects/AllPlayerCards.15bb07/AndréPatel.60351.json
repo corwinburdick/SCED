@@ -31,9 +31,9 @@
   "Nickname": "André Patel",
   "SidewaysCard": true,
   "Tags": [
+    "CardWithHelper",
     "Investigator",
-    "PlayerCard",
-    "CardWithHelper"
+    "PlayerCard"
   ],
   "Transform": {
     "rotY": 270,

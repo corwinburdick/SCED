@@ -11,14 +11,14 @@ local updated
 local state
 
 local xmlData          = {
-  Action = { color = "#15693FE6", onClick = "addExtraAction" },
+  Action    = { color = "#15693FE6", onClick = "addExtraAction" },
   ElderSign = { color = "#50A8CEE6", onClick = "elderSignAbility" }
 }
 
 function updateSave()
   self.script_state = JSON.encode({
     isHelperEnabled = isHelperEnabled,
-    state = state
+    state           = state
   })
 end
 
@@ -41,15 +41,15 @@ end
 
 function addExtraAction()
   if not updated then return end
-  updated = false
+  updated        = false
 
   local position = self.getPosition()
   local matColor = PlayermatApi.getMatColorByPosition(position)
-  local mat = GUIDReferenceApi.getObjectByOwnerAndType(matColor, "Playermat")
+  local mat      = GUIDReferenceApi.getObjectByOwnerAndType(matColor, "Playermat")
   local rotation = mat.getRotation()
 
   -- find empty action token slots by checking snap points
-  local snaps = mat.getSnapPoints()
+  local snaps    = mat.getSnapPoints()
 
   -- get first empty slot in the top row (so the second empty slot because of the ability token)
   local emptyPos = position -- default to card position
@@ -66,7 +66,7 @@ function addExtraAction()
     end
   end
 
-  local callbackName = "updateUniversalActionAbilityToken"
+  local callbackName   = "updateUniversalActionAbilityToken"
   local callbackParams = { class = "Rogue", symbol = "Rogue" }
   TokenManagerApi.spawnToken(emptyPos + Vector(0, 0.7, 0), "universalActionAbility", rotation, callbackName, callbackParams, nil, "Temporary")
   state = { Action = false, ElderSign = true }
@@ -96,7 +96,7 @@ end
 
 function errorMessage(_, _, triggeringButton)
   if triggeringButton == "Action" then
-    broadcastToAll("You have already triggered this once this round.", "Red")
+    broadcastToAll("You have already triggered this ability this round.", "Red")
   end
 end
 
