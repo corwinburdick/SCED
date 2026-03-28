@@ -1,4 +1,9 @@
-local TableLib = require("util/TableLib")
+local GUIDReferenceApi     = require("core/GUIDReferenceApi")
+local MathLib              = require("util/MathLib")
+local PlayermatApi         = require("playermat/PlayermatApi")
+local SearchLib            = require("util/SearchLib")
+local TableLib             = require("util/TableLib")
+local TokenManagerApi      = require("tokens/TokenManagerApi")
 
 local class, symbol
 
@@ -299,5 +304,40 @@ function randomize()
     updateClassAndSymbol({ class = newSymbol, symbol = newSymbol })
   else
     updateClassAndSymbol({ class = CLASS_LIST[math.random(1, #CLASS_LIST)], symbol = newSymbol })
+  end
+end
+
+function onRotate(_, flip, _, _, oldFlip)
+  if flip == oldFlip then return end
+  if MathLib.roundAngleToMultiple(flip, 10) == 180 and symbol == "Reaction" then -- special action abilities when using a reaction
+    local matColor = PlayermatApi.getMatColorByPosition(self.getPosition())
+    local activeInvestigatorData = PlayermatApi.getActiveInvestigatorData(matColor)
+    if activeInvestigatorData == nil then return end
+    if activeInvestigatorData.id == "60351" then -- André Patel
+      local mat      = GUIDReferenceApi.getObjectByOwnerAndType(matColor, "Playermat")
+      local rotation = mat.getRotation()
+
+      -- find empty action token slots by checking snap points
+      local snaps    = mat.getSnapPoints()
+
+      -- get first empty slot in the top row (so the second empty slot because of the ability token)
+      local emptyPos = self.getPosition() + Vector(1.1, 0, 0) -- default to position just above
+      for i, snap in ipairs(snaps) do
+        if i > 1 then
+          if snap.tags[1] == "UniversalToken" then
+            local snapPos = mat.positionToWorld(snap.position)
+            local searchResult = SearchLib.atPosition(snapPos, "isUniversalToken")
+            if #searchResult == 0 then
+              emptyPos = snapPos
+              break
+            end
+          end
+        end
+      end
+
+      local callbackName = "updateUniversalActionAbilityToken"
+      local callbackParams = { class = "Rogue", symbol = "Rogue" }
+      TokenManagerApi.spawnToken(emptyPos + Vector(0, 0.7, 0), "universalActionAbility", rotation, callbackName, callbackParams, nil, "Temporary")
+    end
   end
 end
