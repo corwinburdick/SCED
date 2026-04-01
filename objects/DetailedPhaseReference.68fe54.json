@@ -20,6 +20,7 @@
   "GMNotes": "{\n  \"id\": \"PhaseReference\"\n}",
   "GUID": "68fe54",
   "Hands": false,
+  "Locked": true,
   "Name": "Card",
   "Nickname": "Detailed Phase Reference",
   "Transform": {
