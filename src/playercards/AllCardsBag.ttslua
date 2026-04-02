@@ -509,8 +509,9 @@ end
 
 -- Expects a table like { [1] = true, [2] = false, [0] = true }
 function getFilteredContent(activeChapters)
-  local matches = {}
-  local seen    = {}
+  local matches  = {}
+  local seen     = {}
+  local hasOther = false
 
   local function processCycle(cycleName)
     if seen[cycleName] then return end
@@ -519,6 +520,7 @@ function getFilteredContent(activeChapters)
     if activeChapters[chapter] and cycleIndex[cycleName] and cycleHasSpawnableCards(cycleName) then
       table.insert(matches, toTitleCase(cycleName))
       seen[cycleName] = true
+      if cycleName == "other" then hasOther = true end
     end
   end
 
@@ -530,6 +532,10 @@ function getFilteredContent(activeChapters)
   -- Pass 2: Remaining cycles in index
   for cycleName, _ in pairs(cycleIndex) do
     processCycle(cycleName)
+  end
+
+  if not hasOther then
+    table.insert(matches, "Other")
   end
 
   return matches
