@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/13373754255192160129/1D472AF862FF91F4F4F44D962041B57A7EC5E945/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/ManualDexterity.rev01592.gmnotes",
   "GUID": "rev01592",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Manual Dexterity",
   "Tags": [

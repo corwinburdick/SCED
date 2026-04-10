@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/10570763246557361773/053E41A098AA050E572EF462824FDB8CB8CA5BC6/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "O'Bannion Driver",
   "GMNotes_path": "AllPlayerCards.15bb07/ChuckFergus5Taboo.0e72b7.gmnotes",
   "GUID": "0e72b7",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Chuck Fergus (5) (Taboo)",
   "Tags": [

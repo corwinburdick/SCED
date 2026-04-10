@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62592696799946787/E25D25A1D88A7682BC3F23418CCF36FD82C62CFB/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/ForensicKit.tdc036.gmnotes",
   "GUID": "tdc036",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Forensic Kit",
   "Tags": [

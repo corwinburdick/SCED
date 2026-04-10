@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62586906414449052/26DF73E212A68D273C89A1EF16E8370C96DC048F/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/GiftofNodens5.tdc094.gmnotes",
   "GUID": "tdc094",
-  "HideWhenFaceDown": true,
   "LuaScript": "require(\"playercards/cards/GiftofNodens\")",
   "Name": "CardCustom",
   "Nickname": "Gift of Nodens (5)",

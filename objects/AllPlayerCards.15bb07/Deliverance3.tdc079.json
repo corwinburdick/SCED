@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62583101360207739/352E3A9D8B89D7D6486113B426C9F2EFF7233B6E/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Deliverance3.tdc079.gmnotes",
   "GUID": "tdc079",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Deliverance (3)",
   "Tags": [

@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62592696799947737/2C68F2FB74E00D819BE787A9F8DEA112C280083C/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Youvehadworse4.tdc063.gmnotes",
   "GUID": "tdc063",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "\"You’ve had worse...\" (4)",
   "Tags": [

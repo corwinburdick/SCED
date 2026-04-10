@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/13805220464474588382/3B07D7D310314C892207B647A707EC0848C8A047/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Wither4Taboo.f57a6t.gmnotes",
   "GUID": "f57a6t",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Wither (4) (Taboo)",
   "Tags": [

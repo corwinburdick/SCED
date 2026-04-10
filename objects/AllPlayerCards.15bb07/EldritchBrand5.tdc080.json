@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62592696799948168/D5C4632444A0B17E72884286004AB8D5EDDF4338/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/EldritchBrand5.tdc080.gmnotes",
   "GUID": "tdc080",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Eldritch Brand (5)",
   "Tags": [

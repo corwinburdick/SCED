@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/15193476630279694659/8392655E9E226032623C82B7DF24AB6A12DD6451/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "Signature",
   "GMNotes_path": "AllPlayerCards.15bb07/OntheLam.rev01510.gmnotes",
   "GUID": "rev01510",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "On the Lam",
   "Tags": [

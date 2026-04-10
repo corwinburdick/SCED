@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62592696799949523/F3F2A0E78AAF828DE133ED364AB2D970657A4731/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/MotivationalSpeech4.tdc116.gmnotes",
   "GUID": "tdc116",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Motivational Speech (4)",
   "Tags": [

@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/10985076473397528184/BB5E54561027F8314DC5C7F03232F589BAE8A855/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/HuntersInstinct.12074.gmnotes",
   "GUID": "12074",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Hunter's Instinct",
   "Tags": [

@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/10256697779308265031/EED8D0591F3C7E4A1C9F4D0FDC02D32524592C2F/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/DrawntotheFlame.rev01564.gmnotes",
   "GUID": "rev01564",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Drawn to the Flame",
   "Tags": [

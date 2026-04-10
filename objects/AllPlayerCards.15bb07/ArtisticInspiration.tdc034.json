@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62585168938086880/A1DE5414265DFB83F06B4D992818FC171FF7A174/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/ArtisticInspiration.tdc034.gmnotes",
   "GUID": "tdc034",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Artistic Inspiration",
   "Tags": [

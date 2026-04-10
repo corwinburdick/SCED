@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/10413448461701697722/D3575736E10CFAC63683BB2FA2F9A3EB9CF03228/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Shotgun4.rev01529.gmnotes",
   "GUID": "rev01529",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Shotgun (4)",
   "Tags": [

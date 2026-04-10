@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/15491824830365257307/2B934EC8756B5D4CE816A5D9ABBBF21744317A2C/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "Basic Weakness",
   "GMNotes_path": "AllPlayerCards.15bb07/Paranoia.rev01597.gmnotes",
   "GUID": "rev01597",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Paranoia",
   "Tags": [

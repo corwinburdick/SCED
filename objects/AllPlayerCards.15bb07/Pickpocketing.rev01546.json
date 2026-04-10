@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/10395160090777714503/E00F93E6C034E754CD5CD389904433CE3DC1B6F7/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Pickpocketing.rev01546.gmnotes",
   "GUID": "rev01546",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Pickpocketing",
   "Tags": [

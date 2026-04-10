@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/11981861543336327872/848E503F980F49EB39175F91AC0AA1E72211FDBC/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/BlindingLight2.rev01569.gmnotes",
   "GUID": "rev01569",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Blinding Light (2)",
   "Tags": [

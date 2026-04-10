@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/17478143168912274788/99726166C10BC24356FCC6F40A8E440E1E33447B/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/WardofProtection.12065.gmnotes",
   "GUID": "12065",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Ward of Protection",
   "Tags": [

@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1829048801001650323/4356445C44C1DEECFE3F70986569B6149E87FBB7/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes": "{\n  \"id\": \"09079-c\",\n  \"type\": \"UpgradeSheet\",\n  \"cycle\": \"The Scarlet Keys\"\n}",
   "GUID": "19a05b",
   "Hands": false,
-  "HideWhenFaceDown": true,
   "LuaScript": "require(\"playercards/customizable/LivingInkUpgradeSheet\")",
   "Name": "CardCustom",
   "Nickname": "Living Ink Upgrade Sheet",

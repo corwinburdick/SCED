@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62592696799946509/DB85BCDE410E74469967962AE0132A7203CAC704/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "Fearless Flatfoot",
   "GMNotes_path": "AllPlayerCards.15bb07/AliceLuxley2.tdc027.gmnotes",
   "GUID": "tdc027",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Alice Luxley (2)",
   "Tags": [

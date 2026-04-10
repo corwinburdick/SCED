@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62587631007137659/F73255A30556A2A31FB27E0D138B0916FD9DF258/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Obscure2.tdc060.gmnotes",
   "GUID": "tdc060",
-  "HideWhenFaceDown": true,
   "LuaScript": "require(\"playercards/cards/Obscure2\")",
   "Name": "CardCustom",
   "Nickname": "Obscure (2)",

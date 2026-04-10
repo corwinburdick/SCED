@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/15807044553824861077/E4B6F2F5370207D011B4600960A2BF474977B245/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "Dark Revelations",
   "GMNotes_path": "AllPlayerCards.15bb07/RuthWestmacott.782e0a.gmnotes",
   "GUID": "782e0a",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Ruth Westmacott",
   "Tags": [

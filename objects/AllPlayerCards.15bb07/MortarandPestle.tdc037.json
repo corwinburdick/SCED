@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62584543539322006/9AB92488329C6577CFE0F1B8153029B34BD38523/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/MortarandPestle.tdc037.gmnotes",
   "GUID": "tdc037",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Mortar and Pestle",
   "Tags": [

@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1017195287736529784/BEB850DCAA5497CC1A96E1603C0D3AFFE8B0F2BB/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "Advanced",
   "GMNotes_path": "AllPlayerCards.15bb07/DaisysToteBag.cf41be.gmnotes",
   "GUID": "cf41be",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Daisy's Tote Bag",
   "Tags": [

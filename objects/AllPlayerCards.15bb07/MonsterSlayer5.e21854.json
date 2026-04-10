@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/9322690455983343988/9D22F276214F0DDE5A5348D3E132B5D7E1305BCB/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/MonsterSlayer5.e21854.gmnotes",
   "GUID": "e21854",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Monster Slayer (5)",
   "Tags": [

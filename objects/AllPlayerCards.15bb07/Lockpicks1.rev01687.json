@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/15772813620581663158/145CFD0E8C00D5DA21D0B084734584CFAE9D03AE/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Lockpicks1.rev01687.gmnotes",
   "GUID": "rev01687",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Lockpicks (1)",
   "Tags": [

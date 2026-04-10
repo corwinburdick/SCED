@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62582467378820073/EF3BFE9EE50EEDA64973BE8EF626B901678E3516/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/CorrelateAllItsContents.tdc040.gmnotes",
   "GUID": "tdc040",
-  "HideWhenFaceDown": true,
   "LuaScript": "require(\"playercards/CardsThatRedrawTokens\")",
   "Name": "CardCustom",
   "Nickname": "Correlate All Its Contents",

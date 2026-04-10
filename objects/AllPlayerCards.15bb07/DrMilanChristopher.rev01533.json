@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/11860557541544191386/7BD8D81E83313648C0BD9A15007A27A8095F718F/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "Professor of Entomology",
   "GMNotes_path": "AllPlayerCards.15bb07/DrMilanChristopher.rev01533.gmnotes",
   "GUID": "rev01533",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Dr. Milan Christopher",
   "Tags": [

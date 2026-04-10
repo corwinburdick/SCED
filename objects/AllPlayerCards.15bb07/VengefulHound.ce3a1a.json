@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/9266002411140746513/3BFCFBBDBA939F7B545D3245131D6CC707C8740D/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/VengefulHound.ce3a1a.gmnotes",
   "GUID": "ce3a1a",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Vengeful Hound",
   "Tags": [

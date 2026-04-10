@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/9458096214407780924/889F9BAEACEEC6C721497890EF4CC9D5D81E50AA/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Ivehadworse4.rev01684.gmnotes",
   "GUID": "rev01684",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "\"I've had worse\" (4)",
   "Tags": [

@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/18045218930724844783/E03FD6438B809D0BE7723DCA15B91F42DE46DF07/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/45Automatic.rev01516.gmnotes",
   "GUID": "rev01516",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": ".45 Automatic",
   "Tags": [

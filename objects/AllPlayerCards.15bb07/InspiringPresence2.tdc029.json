@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62592696799946637/52809C4A8498C1DC212F97B3A31EE19E670E01EA/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/InspiringPresence2.tdc029.gmnotes",
   "GUID": "tdc029",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Inspiring Presence (2)",
   "Tags": [

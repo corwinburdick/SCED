@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62592696799948113/74A61B1ED51AEB7401A881BE158881C126C79C8E/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Enraptured2.tdc077.gmnotes",
   "GUID": "tdc077",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Enraptured (2)",
   "Tags": [

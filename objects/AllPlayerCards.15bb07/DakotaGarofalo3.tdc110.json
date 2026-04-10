@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62586906401293312/A25CEF64B03591186D4FDDADC3E0D61A60B4726B/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "On the Hunt",
   "GMNotes_path": "AllPlayerCards.15bb07/DakotaGarofalo3.tdc110.gmnotes",
   "GUID": "tdc110",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Dakota Garofalo (3)",
   "Tags": [

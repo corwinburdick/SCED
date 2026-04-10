@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/15730441882609395246/A488E4A096A551CD725CD6CBF4732451E502241F/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/CatBurglar1.rev01555.gmnotes",
   "GUID": "rev01555",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Cat Burglar (1)",
   "Tags": [

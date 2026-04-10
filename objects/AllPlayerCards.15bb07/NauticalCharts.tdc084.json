@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62585168924014064/C73C54CEF099F207B5D8871983E83563A678FCB6/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/NauticalCharts.tdc084.gmnotes",
   "GUID": "tdc084",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Nautical Charts",
   "Tags": [

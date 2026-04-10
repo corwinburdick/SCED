@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62585168924013814/A06FCFA917AEA803D437C6B119BF7E39CFE801C6/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "Signs of Cataclysm",
   "GMNotes_path": "AllPlayerCards.15bb07/DialofAncients4.tdc046.gmnotes",
   "GUID": "tdc046",
-  "HideWhenFaceDown": true,
   "LuaScript": "require(\"playercards/cards/DialofAncients4Cataclysm\")",
   "Name": "CardCustom",
   "Nickname": "Dial of Ancients (4)",

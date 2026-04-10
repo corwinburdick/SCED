@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/14680619349454211273/3E1EC761AAC665824AD343DFAC063907308DF62D/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/SharpRhetoric.12035.gmnotes",
   "GUID": "12035",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Sharp Rhetoric",
   "Tags": [

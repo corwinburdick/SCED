@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/2278324186517520604/13B2733436FDBFFCAAF9BD76DFE053F96F559A7E/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "Advanced",
   "GMNotes_path": "AllPlayerCards.15bb07/TrustyBullwhip.ca9a61.gmnotes",
   "GUID": "ca9a61",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Trusty Bullwhip",
   "Tags": [

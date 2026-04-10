@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/14750776653103834706/F72C8844D64991E4CBD848D41D41BDF624CD617A/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/RelicHunter3.rev01695.gmnotes",
   "GUID": "rev01695",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Relic Hunter (3)",
   "Tags": [

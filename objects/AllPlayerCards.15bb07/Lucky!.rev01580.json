@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/15454410958192506612/273F13A22CD9FF2B1C1A94D9C01BC8E6750DDFEC/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Lucky!.rev01580.gmnotes",
   "GUID": "rev01580",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Lucky!",
   "Tags": [

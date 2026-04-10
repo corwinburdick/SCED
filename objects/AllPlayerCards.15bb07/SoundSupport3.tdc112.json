@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62583101358443066/9243AF287D7BF9D24B685F2774B781BB826ED2FA/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/SoundSupport3.tdc112.gmnotes",
   "GUID": "tdc112",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Sound Support (3)",
   "Tags": [

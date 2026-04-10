@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/13385442014690895260/1EECD5D0392B0FA1912585AD011A67C6508D72E0/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/SpiritualEcho2Taboo.tdc075t.gmnotes",
   "GUID": "tdc075t",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Spiritual Echo (2) (Taboo)",
   "Tags": [

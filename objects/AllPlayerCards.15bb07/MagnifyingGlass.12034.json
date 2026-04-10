@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/13664718155210136257/AD94D3319F6AB6BCD56741833D0D7DD70D65852E/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/MagnifyingGlass.12034.gmnotes",
   "GUID": "12034",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Magnifying Glass",
   "Tags": [

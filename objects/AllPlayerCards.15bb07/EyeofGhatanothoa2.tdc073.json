@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62585168924014020/DDDE14C07EA9864CF31331CF94D0939440456D0F/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "Artifact of the Dark God",
   "GMNotes_path": "AllPlayerCards.15bb07/EyeofGhatanothoa2.tdc073.gmnotes",
   "GUID": "tdc073",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Eye of Ghatanothoa (2)",
   "Tags": [

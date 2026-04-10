@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62592696799946971/FC049D77C876F84F58C3FBDA3FC38E891A787BCC/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/QuickWitted1.tdc042.gmnotes",
   "GUID": "tdc042",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Quick Witted (1)",
   "Tags": [

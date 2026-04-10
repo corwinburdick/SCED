@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/14979290786343745812/8E7A668F366A84571D86698CDBB173AB25D254D9/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Elusive.rev01550.gmnotes",
   "GUID": "rev01550",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Elusive",
   "Tags": [

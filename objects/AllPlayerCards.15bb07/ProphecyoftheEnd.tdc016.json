@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62584543536434327/BA1D5BFD09B9773DB5432A621F84913672B9988B/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/ProphecyoftheEnd.tdc016.gmnotes",
   "GUID": "tdc016",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Prophecy of the End",
   "Tags": [

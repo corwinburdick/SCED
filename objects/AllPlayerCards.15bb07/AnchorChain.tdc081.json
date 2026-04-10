@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62586453242267879/CB5471623ABEA18410F87E36476FB04B64A45CD7/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/AnchorChain.tdc081.gmnotes",
   "GUID": "tdc081",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Anchor Chain",
   "Tags": [

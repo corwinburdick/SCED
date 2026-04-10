@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/9989782385038705251/FA41E5153BAC189930BB3878A69DE9B4B386EE70/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/BurnAfterReading1.eedd0b.gmnotes",
   "GUID": "eedd0b",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Burn After Reading (1)",
   "Tags": [

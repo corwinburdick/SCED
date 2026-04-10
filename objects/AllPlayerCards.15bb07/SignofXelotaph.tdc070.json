@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62592696799947954/4917F32B162E9C055124DAD6D713D8AB035956C7/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "Symbol of Protection",
   "GMNotes_path": "AllPlayerCards.15bb07/SignofXelotaph.tdc070.gmnotes",
   "GUID": "tdc070",
-  "HideWhenFaceDown": true,
   "LuaScript": "require(\"playercards/cards/SignofXelotaph\")",
   "Name": "CardCustom",
   "Nickname": "Sign of Xelotaph",

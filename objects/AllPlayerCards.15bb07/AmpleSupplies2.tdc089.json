@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62592696799948670/E0DD3CD13F35CB865F751201E6996F55B5F157FB/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/AmpleSupplies2.tdc089.gmnotes",
   "GUID": "tdc089",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Ample Supplies (2)",
   "Tags": [

@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/11972325664005107006/10FC00B561689F99583B6C41ED1AFE31C9ECC582/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/SurvivalInstinct.rev01581.gmnotes",
   "GUID": "rev01581",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Survival Instinct",
   "Tags": [

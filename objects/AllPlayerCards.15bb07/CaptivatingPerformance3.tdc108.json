@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62585168924014112/DBBF4EC1BA0239E1DF4773FEF31209DDC2C38564/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/CaptivatingPerformance3.tdc108.gmnotes",
   "GUID": "tdc108",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Captivating Performance (3)",
   "Tags": [

@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/12065304325330357319/413E0F20E28BD355A24F7C503F5B3C6BA32CF264/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/SixthSense.6eceef.gmnotes",
   "GUID": "6eceef",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Sixth Sense",
   "Tags": [

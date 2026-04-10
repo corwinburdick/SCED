@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/2414565357243142330/B4BB77B904CF3AFAF3181392C4849174F3D87D46/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "Advanced",
   "GMNotes_path": "AllPlayerCards.15bb07/SearchfortheTruth.4156dd.gmnotes",
   "GUID": "4156dd",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Search for the Truth",
   "Tags": [

@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62592696799949629/3C3F2E6E322D22C0CC04F59F47B40F14B5EA4DEC/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/DimensionalVortex5.tdc124.gmnotes",
   "GUID": "tdc124",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Dimensional Vortex (5)",
   "Tags": [

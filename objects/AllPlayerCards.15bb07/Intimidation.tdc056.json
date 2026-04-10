@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62592696799947600/9EF6CC774BDA291643744C13BD80F7327B1FA4D7/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Intimidation.tdc056.gmnotes",
   "GUID": "tdc056",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Intimidation",
   "Tags": [

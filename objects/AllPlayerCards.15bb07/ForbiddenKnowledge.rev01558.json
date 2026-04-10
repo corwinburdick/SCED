@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/10357123094370959368/D4CC051E7829792B63A2030EDD190E03F7EB03AD/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/ForbiddenKnowledge.rev01558.gmnotes",
   "GUID": "rev01558",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Forbidden Knowledge",
   "Tags": [

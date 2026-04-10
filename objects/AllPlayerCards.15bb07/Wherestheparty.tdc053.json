@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62586453242267789/6B349CC72F2B5C43596BDCDB0CF0121C3C143DAC/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Wherestheparty.tdc053.gmnotes",
   "GUID": "tdc053",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "\"Where's the party?\"",
   "Tags": [

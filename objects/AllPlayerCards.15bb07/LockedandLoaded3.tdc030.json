@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62585168938086808/2E000A0D225F5F8675AE708EC7767B36E6A0F542/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/LockedandLoaded3.tdc030.gmnotes",
   "GUID": "tdc030",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Locked and Loaded (3)",
   "Tags": [

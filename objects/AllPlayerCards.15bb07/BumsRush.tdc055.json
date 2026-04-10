@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62587631007137594/E15B017A4C2A96E12322165695B0BB3A46190C9E/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/BumsRush.tdc055.gmnotes",
   "GUID": "tdc055",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Bum's Rush",
   "Tags": [

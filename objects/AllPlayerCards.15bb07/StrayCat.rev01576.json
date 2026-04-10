@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/10942408976260328707/43658C065836B0A0C16B950037365D19EFFB4417/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/StrayCat.rev01576.gmnotes",
   "GUID": "rev01576",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Stray Cat",
   "Tags": [

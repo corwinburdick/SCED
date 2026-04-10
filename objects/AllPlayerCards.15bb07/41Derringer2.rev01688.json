@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/17749289009731792367/3B7AF418BB327DD7575929722C9472443FA7878A/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/41Derringer2.rev01688.gmnotes",
   "GUID": "rev01688",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": ".41 Derringer (2)",
   "Tags": [

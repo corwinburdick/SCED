@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/13075006929666536754/15515E323BBD539B8E5A0A3E01CCF31CDF2F70D0/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/SledDog.852697.gmnotes",
   "GUID": "852697",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Sled Dog",
   "Tags": [

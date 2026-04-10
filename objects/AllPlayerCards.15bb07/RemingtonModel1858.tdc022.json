@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62592696799946280/C298CC5FFB3338B5F563C94276E1B6056472AA34/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/RemingtonModel1858.tdc022.gmnotes",
   "GUID": "tdc022",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Remington Model 1858",
   "Tags": [

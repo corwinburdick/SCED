@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62582467381054330/62817B7373897BEAB599AE33640E5EFEFFCCD256/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/NosetotheGrindstone3.tdc111.gmnotes",
   "GUID": "tdc111",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Nose to the Grindstone (3)",
   "Tags": [

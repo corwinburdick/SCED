@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62582467378809443/2C50B3CC0A5D9ACAF822616A110EAA2429C7F67F/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "Sculpting His Dreams",
   "GMNotes_path": "AllPlayerCards.15bb07/LawrenceCarlisle.tdc083.gmnotes",
   "GUID": "tdc083",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Lawrence Carlisle",
   "Tags": [

@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/10249517452971150824/B56CC1CBCBA5408AB2874234771CB5BC44490562/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Barricade.rev01538.gmnotes",
   "GUID": "rev01538",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Barricade",
   "Tags": [

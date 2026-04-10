@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/13453694698772441085/7AAD975542719ED4B768EC184628FBA17D5B39DB/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/LeadingLadyHeroine.25688.gmnotes",
   "GUID": "25688",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Leading Lady (Heroine)",
   "Tags": [

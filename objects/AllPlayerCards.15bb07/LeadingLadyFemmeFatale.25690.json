@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/13332131095709516029/FE77999D28C5BC9EE4DA0884850942DE2F9C0ACA/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/LeadingLadyFemmeFatale.25690.gmnotes",
   "GUID": "25690",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Leading Lady (Femme Fatale)",
   "Tags": [

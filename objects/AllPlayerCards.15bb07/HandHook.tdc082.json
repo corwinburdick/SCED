@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62587631007137720/353B117E071F26D81A58A0233D6C1D214A9E0ECE/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/HandHook.tdc082.gmnotes",
   "GUID": "tdc082",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Hand Hook",
   "Tags": [

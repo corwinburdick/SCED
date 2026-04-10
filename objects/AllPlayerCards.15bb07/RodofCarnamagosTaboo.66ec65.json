@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/13168997887329547549/32F571D94A3AA0A6B631952529B07A9419B1D8A9/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "Scepter of the Mad Seer",
   "GMNotes_path": "AllPlayerCards.15bb07/RodofCarnamagosTaboo.66ec65.gmnotes",
   "GUID": "66ec65",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Rod of Carnamagos (Taboo)",
   "Tags": [

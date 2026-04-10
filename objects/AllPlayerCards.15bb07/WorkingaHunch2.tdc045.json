@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62588175481755750/6A2345EBA27F45020F8C16901BDFB306370C8CCA/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/WorkingaHunch2.tdc045.gmnotes",
   "GUID": "tdc045",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Working a Hunch (2)",
   "Tags": [

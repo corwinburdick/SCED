@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/17412267720458288561/F56243DA93C38A3017F5055E042BB739DB1C2875/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/SpectralRazor.8e8a14.gmnotes",
   "GUID": "8e8a14",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Spectral Razor",
   "Tags": [

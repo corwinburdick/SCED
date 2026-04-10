@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62592696799948740/DBAFD92306A133E3BFF978264E17AA18F94BA5E2/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/AGlimmerofHope2.tdc090.gmnotes",
   "GUID": "tdc090",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "A Glimmer of Hope (2)",
   "Tags": [

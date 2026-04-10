@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62592696799949677/C03A7DA7C53A24F6CD099669D684C47E6DECA885/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/DownandOut.tdc126.gmnotes",
   "GUID": "tdc126",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Down and Out",
   "Tags": [

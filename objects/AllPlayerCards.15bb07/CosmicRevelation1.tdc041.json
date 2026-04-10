@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62587631007137463/CDF4B44D87CF500DC97678FFEA9F9D4CD4C7C4BD/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/CosmicRevelation1.tdc041.gmnotes",
   "GUID": "tdc041",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Cosmic Revelation (1)",
   "Tags": [

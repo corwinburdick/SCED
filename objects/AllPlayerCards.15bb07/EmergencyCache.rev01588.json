@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/12829426991685669938/B77D5011A879A4268E7C6C062C43F7EB2DEC050E/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/EmergencyCache.rev01588.gmnotes",
   "GUID": "rev01588",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Emergency Cache",
   "Tags": [

@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62592696799947074/8B47657E4F4FFDCF7519ACB9F5ED1EE84FCE5F2B/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Misdirection2.tdc043.gmnotes",
   "GUID": "tdc043",
-  "HideWhenFaceDown": true,
   "LuaScript": "require(\"playercards/cards/Misdirection2\")",
   "Name": "CardCustom",
   "Nickname": "Misdirection (2)",

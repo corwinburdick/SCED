@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/15058518757263993533/7005589EDE3CC327083EF6D01ADAFD02B1934CCC/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/ElderSignAmulet3.rev01595.gmnotes",
   "GUID": "rev01595",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Elder Sign Amulet (3)",
   "Tags": [

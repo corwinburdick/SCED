@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/10069340107456056506/501286A9F5935F8F8BE39E23780D4069399F997C/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/NauticalProwess.9d6e9a.gmnotes",
   "GUID": "9d6e9a",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Nautical Prowess",
   "Tags": [

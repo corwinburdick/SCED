@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62585168924014178/B3C7D2722A85E0D19634B6E997EC87D3AA90A031/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/MemoriesofAnotherLife5.tdc125.gmnotes",
   "GUID": "tdc125",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Memories of Another Life (5)",
   "Tags": [

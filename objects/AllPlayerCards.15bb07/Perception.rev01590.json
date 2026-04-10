@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/13819214691865046819/6749CB0632E70240F213607167846AEA695A472D/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Perception.rev01590.gmnotes",
   "GUID": "rev01590",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Perception",
   "Tags": [

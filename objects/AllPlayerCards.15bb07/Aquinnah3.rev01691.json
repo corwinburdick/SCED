@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/12712736430051747646/3EAD2860F694AC297AEC2BC500C09D51969EEC64/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "The Forgotten Daughter",
   "GMNotes_path": "AllPlayerCards.15bb07/Aquinnah3.rev01691.gmnotes",
   "GUID": "rev01691",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Aquinnah (3)",
   "Tags": [

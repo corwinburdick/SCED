@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/13403768825719978873/4E9F3AEC54719BF36FBA50F628A4FD650450B1C9/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/SneakAttack.rev01552.gmnotes",
   "GUID": "rev01552",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Sneak Attack",
   "Tags": [

@@ -7,8 +7,7 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/14476589046663901791/44A3EE8A2329E70229FEB89444AFCC9EB4A220AE/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "CustomUIAssets": [
@@ -20,7 +19,6 @@
   ],
   "GMNotes_path": "AllPlayerCards.15bb07/Strong-Armed1Taboo.294dt.gmnotes",
   "GUID": "294dt",
-  "HideWhenFaceDown": true,
   "LuaScript": "require(\"playercards/CardsThatRedrawTokens\")",
   "Name": "Card",
   "Nickname": "Strong-Armed (1) (Taboo)",

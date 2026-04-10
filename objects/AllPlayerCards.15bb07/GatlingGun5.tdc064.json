@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62586453242271297/11AC8115D584080281585A1CA68709DFEF89DA9E/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/GatlingGun5.tdc064.gmnotes",
   "GUID": "tdc064",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Gatling Gun (5)",
   "Tags": [

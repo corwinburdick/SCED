@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/15199392126274622125/99E95B9E1CABA42737FC69B30DBF9E16C6ACB539/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/ArcaneStudies.rev01562.gmnotes",
   "GUID": "rev01562",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Arcane Studies",
   "Tags": [

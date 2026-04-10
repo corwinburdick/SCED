@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/18031136636212492292/B846104FED5BC8828547D7A58938FA5F71FE4839/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "Protective Amulet",
   "GMNotes_path": "AllPlayerCards.15bb07/DiscofItzamna2.rev01541.gmnotes",
   "GUID": "rev01541",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Disc of Itzamna (2)",
   "Tags": [

@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62588175482757695/BF62D8683864FD646F493FCF1BD55CBB156BC5A2/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "Oath of Order",
   "GMNotes_path": "AllPlayerCards.15bb07/SacredOath5.tdc122.gmnotes",
   "GUID": "tdc122",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Sacred Oath (5)",
   "Tags": [

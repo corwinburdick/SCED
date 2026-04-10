@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62592696799949594/92B89E3137237A74BB1DF16443B652E6DF1E0FBC/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/OnTheirHeels5.tdc120.gmnotes",
   "GUID": "tdc120",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "On Their Heels (5)",
   "Tags": [

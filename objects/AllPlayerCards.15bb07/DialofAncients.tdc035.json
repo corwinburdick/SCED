@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62585168924013756/1DAE4BBEBFB4678CEC7B6AD9B8F63CC34517EC2B/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "Unidentified",
   "GMNotes_path": "AllPlayerCards.15bb07/DialofAncients.tdc035.gmnotes",
   "GUID": "tdc035",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Dial of Ancients",
   "Tags": [

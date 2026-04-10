@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62586906413676584/082CEFC7DA0C0234CD269055246ECC045EB216C7/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/ScientificStudiesGrant2.tdc044.gmnotes",
   "GUID": "tdc044",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Scientific Studies Grant (2)",
   "Tags": [

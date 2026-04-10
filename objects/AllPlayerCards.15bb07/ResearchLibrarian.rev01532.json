@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/17019984011643724068/ABDDF75CD083606BEBE50D603226A55C8D799575/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/ResearchLibrarian.rev01532.gmnotes",
   "GUID": "rev01532",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Research Librarian",
   "Tags": [

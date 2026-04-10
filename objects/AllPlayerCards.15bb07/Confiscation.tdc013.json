@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62586906400214383/F40113B31B01898391F13EBD4191EC2AC03E67EA/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Confiscation.tdc013.gmnotes",
   "GUID": "tdc013",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Confiscation",
   "Tags": [

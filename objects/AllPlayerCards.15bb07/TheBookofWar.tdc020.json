@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62592696799946195/DFCD19B150933F23A058F7AD90A021B2B3A8D0DF/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "Sun Tzu's Legacy",
   "GMNotes_path": "AllPlayerCards.15bb07/TheBookofWar.tdc020.gmnotes",
   "GUID": "tdc020",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "The Book of War",
   "Tags": [

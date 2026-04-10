@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/13792885725144103828/9DBC2E92D8D53B5C44EF7CCA2E205AF1F753D26B/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/OldBookofLore.rev01531.gmnotes",
   "GUID": "rev01531",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Old Book of Lore",
   "Tags": [

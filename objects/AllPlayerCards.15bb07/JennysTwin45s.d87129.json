@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/2466368617691803450/5C647BCF9EBE08572D746C439A543A18C4BE2DD9/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "A Perfect Fit (Advanced)",
   "GMNotes_path": "AllPlayerCards.15bb07/JennysTwin45s.d87129.gmnotes",
   "GUID": "d87129",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Jenny's Twin .45s",
   "Tags": [

@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/9845083056084140555/E4DBE3E6EF9716291E481641930898F84A156E7F/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "Enemy",
   "GMNotes_path": "AllPlayerCards.15bb07/SilverTwilightAcolyte.rev01602.gmnotes",
   "GUID": "rev01602",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Silver Twilight Acolyte",
   "Tags": [

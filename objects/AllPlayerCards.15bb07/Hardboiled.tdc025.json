@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62586453247461257/254681779D67B38F95FFB21C200349091549903F/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Hardboiled.tdc025.gmnotes",
   "GUID": "tdc025",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Hardboiled",
   "Tags": [

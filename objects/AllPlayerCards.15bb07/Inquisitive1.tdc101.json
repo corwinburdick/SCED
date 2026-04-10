@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62592696799949118/C7770F4A93B91D95009E43D24360191EE8BFD6B4/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Inquisitive1.tdc101.gmnotes",
   "GUID": "tdc101",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Inquisitive (1)",
   "Tags": [

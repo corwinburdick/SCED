@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62582467378809366/30FF98263B3AFC91BCA29559286FF3E21D0E431C/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/MobConnections2.tdc059.gmnotes",
   "GUID": "tdc059",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Mob Connections (2)",
   "Tags": [

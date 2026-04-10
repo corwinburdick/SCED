@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/10670900383466683616/7DA2FA07C8A8BC6A3549DB051A1B7CB5C9133ACD/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Collector.12181.gmnotes",
   "GUID": "12181",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Collector",
   "Tags": [

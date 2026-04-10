@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62585168924013646/7002B6414CD26C8C0BE30F0372D32C9BCBB1023A/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/DreamsoftheFlood.tdc006.gmnotes",
   "GUID": "tdc006",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Dreams of the Flood",
   "Tags": [

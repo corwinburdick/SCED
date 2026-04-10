@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/17504017148665147935/8A1C11E8615D51CC8BFA4A441DDF9F4F4E670B88/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "Always on the Mend",
   "GMNotes_path": "AllPlayerCards.15bb07/AlekseySaburov.12072.gmnotes",
   "GUID": "12072",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Aleksey Saburov",
   "Tags": [

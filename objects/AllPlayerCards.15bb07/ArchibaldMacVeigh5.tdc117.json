@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62592696799949551/9ABA94A37F958DD13D5486357ADF454D02C61816/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "Beleagured Lecturer",
   "GMNotes_path": "AllPlayerCards.15bb07/ArchibaldMacVeigh5.tdc117.gmnotes",
   "GUID": "tdc117",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Archibald MacVeigh (5)",
   "Tags": [

@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/15507314719108056353/889C1CFC90D64DE7C8A18F53E24F541C85FC403E/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/SureGamble3.rev01556.gmnotes",
   "GUID": "rev01556",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Sure Gamble (3)",
   "Tags": [

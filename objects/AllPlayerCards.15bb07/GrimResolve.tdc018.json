@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62583101345648461/F12E07F20E0A0325C177B328507D0FCB552477BA/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/GrimResolve.tdc018.gmnotes",
   "GUID": "tdc018",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Grim Resolve",
   "Tags": [

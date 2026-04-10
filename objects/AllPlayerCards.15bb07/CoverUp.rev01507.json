@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/10567167082556543340/D61ED58E945EDA30211ACBFB3304B01E42A3BCAB/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/CoverUp.rev01507.gmnotes",
   "GUID": "rev01507",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Cover Up",
   "Tags": [

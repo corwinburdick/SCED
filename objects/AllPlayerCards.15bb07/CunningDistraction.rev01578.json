@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/10324540783000977966/BD7A4F10D5BD1C31691C8BB09B1DD1E7E78D06CC/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/CunningDistraction.rev01578.gmnotes",
   "GUID": "rev01578",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Cunning Distraction",
   "Tags": [

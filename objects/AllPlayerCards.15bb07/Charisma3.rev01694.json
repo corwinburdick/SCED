@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/16667573053145883115/FE4B79B92FEEF24A04D9623998B83B50797D1809/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Charisma3.rev01694.gmnotes",
   "GUID": "rev01694",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Charisma (3)",
   "Tags": [

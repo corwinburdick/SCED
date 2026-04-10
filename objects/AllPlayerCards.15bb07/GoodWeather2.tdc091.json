@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62583916780974024/EC69CAC61355530BB05DFB1C3E82E02FA4E41865/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/GoodWeather2.tdc091.gmnotes",
   "GUID": "tdc091",
-  "HideWhenFaceDown": true,
   "LuaScript": "require(\"playercards/SkillSelectionCard\")",
   "Name": "CardCustom",
   "Nickname": "Good Weather (2)",

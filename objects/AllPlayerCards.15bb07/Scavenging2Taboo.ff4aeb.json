@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/2503508192924177180/E4B029E64F31A87DDD90E8E61FA969FC3AAF7ABD/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Scavenging2Taboo.ff4aeb.gmnotes",
   "GUID": "ff4aeb",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Scavenging (2) (Taboo)",
   "Tags": [

@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/15410061628246273356/482B4190044AA878C3A49BD173E03EEF3F9EBFA3/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "Petrus de Dacia Translation",
   "GMNotes_path": "AllPlayerCards.15bb07/TheNecronomicon5Taboo.4b7a8e.gmnotes",
   "GUID": "4b7a8e",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "The Necronomicon (5) (Taboo)",
   "Tags": [

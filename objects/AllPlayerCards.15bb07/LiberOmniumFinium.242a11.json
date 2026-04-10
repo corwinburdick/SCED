@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/17472969020343457896/3294F89AD6FB43D5266C7F5921E95236B5F74081/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "Weakness",
   "GMNotes_path": "AllPlayerCards.15bb07/LiberOmniumFinium.242a11.gmnotes",
   "GUID": "242a11",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Liber Omnium Finium",
   "Tags": [

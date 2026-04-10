@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62583101345648498/0A18A64CEDE47526F795F5BCF5AD58E31FED2EDE/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/CastAdrift.tdc019.gmnotes",
   "GUID": "tdc019",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Cast Adrift",
   "Tags": [

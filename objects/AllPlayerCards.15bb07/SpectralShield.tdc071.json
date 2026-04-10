@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/17962510304775507505/05540589F9AD8DA89485E486F223C8DE3E905C11/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/SpectralShield.tdc071.gmnotes",
   "GUID": "tdc071",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Spectral Shield",
   "Tags": [

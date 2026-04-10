@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/9362692321918040836/E0EB4C5B788873A838EDEEBF347DB6BE173C76D5/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/LeadingLadyEnchantress.25691.gmnotes",
   "GUID": "25691",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Leading Lady (Enchantress)",
   "Tags": [

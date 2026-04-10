@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62592696799945947/C20D6890482D3EBF5ABAF369D5854CAB10B4A15C/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Determined.tdc002.gmnotes",
   "GUID": "tdc002",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Determined",
   "Tags": [

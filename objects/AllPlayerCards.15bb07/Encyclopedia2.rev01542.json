@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/10110094243250966436/118AD6791B12E971D8C9618482F1FE1D9D00A142/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Encyclopedia2.rev01542.gmnotes",
   "GUID": "rev01542",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Encyclopedia (2)",
   "Tags": [

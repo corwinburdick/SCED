@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/15434200245239622231/BCC7386BC5C5A5CA43FA50A527153A45EE1C9EF1/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/BookofShadows3.rev01570.gmnotes",
   "GUID": "rev01570",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Book of Shadows (3)",
   "Tags": [

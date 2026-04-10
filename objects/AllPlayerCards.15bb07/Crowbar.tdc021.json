@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62584543536434621/0ED4959AD5C4101409F6043A2FE83FF0E4C7E7F2/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Crowbar.tdc021.gmnotes",
   "GUID": "tdc021",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Crowbar",
   "Tags": [

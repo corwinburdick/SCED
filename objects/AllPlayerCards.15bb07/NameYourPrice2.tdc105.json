@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62592696799949265/89D94C18DA4F8446C6FA7E533C2DA4EDED29011F/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/NameYourPrice2.tdc105.gmnotes",
   "GUID": "tdc105",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Name Your Price (2)",
   "Tags": [

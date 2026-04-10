@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62584543536434684/1424A9B303453569CA2A6CD750CB1C5FEEFDE554/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/SpiritualEcho2.tdc075.gmnotes",
   "GUID": "tdc075",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Spiritual Echo (2)",
   "Tags": [

@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/16641295788182490784/E8F08D33BA498A9CB9EED3ED625959D9C0F3F984/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/MindoverMatter.rev01536.gmnotes",
   "GUID": "rev01536",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Mind over Matter",
   "Tags": [

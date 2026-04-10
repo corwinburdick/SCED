@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/11024745014714872441/B72C049B73496F32218EA2F026708BD4DE2DF075/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "Signature",
   "GMNotes_path": "AllPlayerCards.15bb07/HospitalDebts.rev01511.gmnotes",
   "GUID": "rev01511",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Hospital Debts",
   "Tags": [

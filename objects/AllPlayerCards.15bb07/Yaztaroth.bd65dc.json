@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/15834235546873506525/A80D5721E92787FC89CF767EDE0C52A0697E660F/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "Weakness",
   "GMNotes_path": "AllPlayerCards.15bb07/Yaztaroth.bd65dc.gmnotes",
   "GUID": "bd65dc",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Yaztaroth",
   "Tags": [

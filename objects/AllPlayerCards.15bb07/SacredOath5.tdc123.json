@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62588175482757795/17BA6F794B433CC966C645D1C72E6F67FA77089B/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "Oath of Wisdom",
   "GMNotes_path": "AllPlayerCards.15bb07/SacredOath5.tdc123.gmnotes",
   "GUID": "tdc123",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Sacred Oath (5)",
   "Tags": [

@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/12917383743588483327/944A9C1DBED5A4210BD2A551821FD8CECB244A7E/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "Esoteric Eyepiece (including errata)",
   "GMNotes_path": "AllPlayerCards.15bb07/OculaObscura.tdc009.gmnotes",
   "GUID": "tdc009",
-  "HideWhenFaceDown": true,
   "LuaScript": "require(\"playercards/cards/OculaObscura\")",
   "Name": "CardCustom",
   "Nickname": "Ocula Obscura",

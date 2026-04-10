@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/9918973996430971216/8556A4F28469004F3AC072DB28ECBD8345C7F991/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/SplittheAngle.67e006.gmnotes",
   "GUID": "67e006",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Split the Angle",
   "Tags": [

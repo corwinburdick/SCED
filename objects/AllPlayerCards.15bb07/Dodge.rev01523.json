@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/10129113586908052336/D57D1D63A756935EB22D0443774E7958523357EA/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Dodge.rev01523.gmnotes",
   "GUID": "rev01523",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Dodge",
   "Tags": [

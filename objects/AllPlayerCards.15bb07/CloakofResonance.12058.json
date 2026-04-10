@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/15717886132445328006/22084A5C5CAA5A85462EFC5A0CE9C2D950B984DD/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/CloakofResonance.12058.gmnotes",
   "GUID": "12058",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Cloak of Resonance",
   "Tags": [

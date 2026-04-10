@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62592696799947298/5B7ABFF373D74F832DD703E4F562F7D2234530EE/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "Has Your Back",
   "GMNotes_path": "AllPlayerCards.15bb07/RobertCastaigne.tdc051.gmnotes",
   "GUID": "tdc051",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Robert Castaigne",
   "Tags": [

@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/14410146893738503685/E1CD15382A8663708C1FB5C8E130B79D41F3A29F/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Switchblade.rev01544.gmnotes",
   "GUID": "rev01544",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Switchblade",
   "Tags": [

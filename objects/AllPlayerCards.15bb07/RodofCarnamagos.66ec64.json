@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/12928883197975176521/FB591E30E7F01CCECFF675F328909BE13A554197/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "Scepter of the Mad Seer",
   "GMNotes_path": "AllPlayerCards.15bb07/RodofCarnamagos.66ec64.gmnotes",
   "GUID": "66ec64",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Rod of Carnamagos",
   "Tags": [

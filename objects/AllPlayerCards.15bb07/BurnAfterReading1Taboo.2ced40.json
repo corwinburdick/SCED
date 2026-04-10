@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/11038345310923732775/20187C2D6C1A757E48DA8F87D57A6405F027F01F/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/BurnAfterReading1Taboo.2ced40.gmnotes",
   "GUID": "2ced40",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Burn After Reading (1) (Taboo)",
   "Tags": [

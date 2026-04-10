@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/16407936587535078113/254A4EBBF7FB3DF8FA2537F01D6C2E4DB93E0551/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/MonsterSlayer5Taboo.e21855.gmnotes",
   "GUID": "e21855",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Monster Slayer (5) (Taboo)",
   "Tags": [

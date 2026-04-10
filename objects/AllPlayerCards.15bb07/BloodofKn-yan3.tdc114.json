@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62592696799949366/16EE9E9C651A74603B77D6CCE40F3381FF504852/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/BloodofKn-yan3.tdc114.gmnotes",
   "GUID": "tdc114",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Blood of K’n-yan (3)",
   "Tags": [

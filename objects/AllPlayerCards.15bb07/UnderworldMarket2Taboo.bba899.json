@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62581922059513273/3B3A82BFBBEA5F23765BD885E7ED3420A62E225F/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/UnderworldMarket2Taboo.bba899.gmnotes",
   "GUID": "bba899",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Underworld Market (2) (Taboo)",
   "Tags": [

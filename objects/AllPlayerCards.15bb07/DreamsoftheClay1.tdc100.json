@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62592696799949081/F82307F727048B94519E865459D6F338AB81087C/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/DreamsoftheClay1.tdc100.gmnotes",
   "GUID": "tdc100",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Dreams of the Clay (1)",
   "Tags": [

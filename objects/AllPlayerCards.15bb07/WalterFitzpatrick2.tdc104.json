@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62592696799949227/93C78BF9E30739BECC14D0251AC16BC589439DD8/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/WalterFitzpatrick2.tdc104.gmnotes",
   "GUID": "tdc104",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Walter Fitzpatrick (2)",
   "Tags": [

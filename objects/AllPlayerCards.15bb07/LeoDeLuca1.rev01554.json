@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/13132279759052019219/DAE910BFCE92DBDE454FC5BBE72A4EA2F9358A9B/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "The Louisiana Lion",
   "GMNotes_path": "AllPlayerCards.15bb07/LeoDeLuca1.rev01554.gmnotes",
   "GUID": "rev01554",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Leo De Luca (1)",
   "Tags": [

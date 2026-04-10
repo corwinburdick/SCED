@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/2022727271907675521/7CD01B7199EDE77C9E62CC6D2EAFF53D99AF5BC5/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AdditionalPlayerCards.2cba6b/FineClothes3.5cb973.gmnotes",
   "GUID": "5cb973",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Fine Clothes (3)",
   "Tags": [

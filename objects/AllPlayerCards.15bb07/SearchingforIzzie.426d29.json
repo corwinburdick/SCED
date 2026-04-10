@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/2466368617691803586/22C0433DD0E36AF34DA9A08F93EC43A00F0E2EBE/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "Advanced",
   "GMNotes_path": "AllPlayerCards.15bb07/SearchingforIzzie.426d29.gmnotes",
   "GUID": "426d29",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Searching for Izzie",
   "Tags": [

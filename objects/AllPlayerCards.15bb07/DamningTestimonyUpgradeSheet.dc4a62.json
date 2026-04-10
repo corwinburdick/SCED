@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1829048801001633028/26CBF360B209B69F66C0875118727E742B7D16CD/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes": "{\n  \"id\": \"09059-c\",\n  \"type\": \"UpgradeSheet\",\n  \"cycle\": \"The Scarlet Keys\"\n}",
   "GUID": "dc4a62",
   "Hands": false,
-  "HideWhenFaceDown": true,
   "LuaScript": "require(\"playercards/customizable/DamningTestimonyUpgradeSheet\")",
   "Name": "CardCustom",
   "Nickname": "Damning Testimony Upgrade Sheet",

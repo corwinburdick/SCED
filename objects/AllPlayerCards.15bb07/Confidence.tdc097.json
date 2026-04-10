@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62592696799948928/633045B9FB4AE4831789926B71F2294A3DF55ABE/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Confidence.tdc097.gmnotes",
   "GUID": "tdc097",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Confidence",
   "Tags": [

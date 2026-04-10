@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/15173317141413661484/0CAC062FFDCA103849B558DDF848375C409C48D1/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Machete.rev01520.gmnotes",
   "GUID": "rev01520",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Machete",
   "Tags": [

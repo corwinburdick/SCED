@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62592696799947384/1CD37A36CFBE62A1B7534C99CA6A4EEE3FC651A5/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/StringAlong.tdc052.gmnotes",
   "GUID": "tdc052",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "String Along",
   "Tags": [

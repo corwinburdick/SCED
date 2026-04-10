@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/9627738596083934658/96490FFBD5C43C745886D53552A55D110BC5DF89/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/BumsRushTaboo.tdc055t.gmnotes",
   "GUID": "tdc055t",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Bum's Rush (Taboo)",
   "Tags": [

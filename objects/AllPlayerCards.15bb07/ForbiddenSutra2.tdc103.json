@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62583916778424997/4F477348E3769649C7D68E8DEC04B8E53422FDAE/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/ForbiddenSutra2.tdc103.gmnotes",
   "GUID": "tdc103",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Forbidden Sutra (2)",
   "Tags": [

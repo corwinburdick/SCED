@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62592696799949018/6EF65907B2CD0E441D524DD4B3D97CFD9A072DEB/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/SpiritualHealing4.tdc098.gmnotes",
   "GUID": "tdc098",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Spiritual Healing (4)",
   "Tags": [

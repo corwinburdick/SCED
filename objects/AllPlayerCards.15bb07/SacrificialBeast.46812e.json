@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/10404641374016310120/3B08EBFE481164E0F3DA9D3B8B06D41F4284183A/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/SacrificialBeast.46812e.gmnotes",
   "GUID": "46812e",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Sacrificial Beast",
   "Tags": [

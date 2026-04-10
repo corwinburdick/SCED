@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62586906413676643/6330EB80192958EFDE624D31A91EF3B0EDB07141/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "Law Incarnate",
   "GMNotes_path": "AllPlayerCards.15bb07/BloodofThoth.tdc065.gmnotes",
   "GUID": "tdc065",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Blood of Thoth",
   "Tags": [

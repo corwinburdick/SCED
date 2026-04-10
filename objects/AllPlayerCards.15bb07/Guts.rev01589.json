@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/12744155264166057098/6FB27AE8ED4FCB71695E20CCC71759B860B57112/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Guts.rev01589.gmnotes",
   "GUID": "rev01589",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Guts",
   "Tags": [

@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62581922059455624/16F9C7A4AA57693ACD41525A8A7BE14D5A92D02B/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/EmpiricalHypothesisTaboo.62c67e.gmnotes",
   "GUID": "62c67e",
-  "HideWhenFaceDown": true,
   "LuaScript": "require(\"playercards/cards/EmpiricalHypothesis\")",
   "Name": "CardCustom",
   "Nickname": "Empirical Hypothesis (Taboo)",

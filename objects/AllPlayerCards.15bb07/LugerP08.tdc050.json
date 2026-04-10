@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62583101358099952/DBFD73AB2501CE6E7F237D0B083C8A990E6F1BEE/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/LugerP08.tdc050.gmnotes",
   "GUID": "tdc050",
-  "HideWhenFaceDown": true,
   "LuaScript": "require(\"playercards/cards/LugerP08\")",
   "Name": "CardCustom",
   "Nickname": "Luger P08",

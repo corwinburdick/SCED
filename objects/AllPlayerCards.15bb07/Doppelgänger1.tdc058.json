@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62586453247461307/5058767997996A91D78BF864ADF2EC0DC8495516/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Doppelgänger1.tdc058.gmnotes",
   "GUID": "tdc058",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Doppelgänger (1)",
   "Tags": [

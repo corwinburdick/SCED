@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/2424696374431626355/0E8E98639A52981073EE7914612AB4E929BE79EA/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes": "{\"class\":\"Mythos\",\"cycle\":\"Utility\",\"id\":\"ADDVP\",\"type\":\"Story\",\"victory\":1}",
   "GUID": "958bc0",
-  "HideWhenFaceDown": true,
   "LuaScript": "require(\"mythos/AdditionalVictoryPointsCard\")",
   "LuaScriptState": "{\"notes\":\"Click to type\",\"vp\":1}",
   "Name": "CardCustom",

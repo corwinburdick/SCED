@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/9641794344724216032/4F04729ABB4DB9DB32B1851201342CC8A2231F45/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/SpectralShieldTaboo.tdc071t.gmnotes",
   "GUID": "tdc071t",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Spectral Shield (Taboo)",
   "Tags": [

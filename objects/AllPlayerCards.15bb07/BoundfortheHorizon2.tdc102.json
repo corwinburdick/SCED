@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62592696799949170/604D0043EFC104DAD523E0678BA94DCCF157072E/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/BoundfortheHorizon2.tdc102.gmnotes",
   "GUID": "tdc102",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Bound for the Horizon (2)",
   "Tags": [

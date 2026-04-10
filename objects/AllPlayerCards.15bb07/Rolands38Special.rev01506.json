@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/13712621117824187921/00F1E7581765861DD9AE8A67D69C924AE11318BE/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Rolands38Special.rev01506.gmnotes",
   "GUID": "rev01506",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Roland's .38 Special",
   "Tags": [

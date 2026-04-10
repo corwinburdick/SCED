@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62582467378815729/6677194AD8380B237CCC8D9ABE9C74E62B7AE3A1/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/WhispersofDoom.tdc072.gmnotes",
   "GUID": "tdc072",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Whispers of Doom",
   "Tags": [

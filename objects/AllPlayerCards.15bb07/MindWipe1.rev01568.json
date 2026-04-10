@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/17574155963306152118/4439491DD1F2A5F7CF855CB99034C9A88400C548/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/MindWipe1.rev01568.gmnotes",
   "GUID": "rev01568",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Mind Wipe (1)",
   "Tags": [

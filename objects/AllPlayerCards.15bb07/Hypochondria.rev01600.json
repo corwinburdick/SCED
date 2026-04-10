@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/11115604841542063820/01D2B84F6DC2989A429BB33BBC744EEC5AC0BB0F/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "Basic Weakness",
   "GMNotes_path": "AllPlayerCards.15bb07/Hypochondria.rev01600.gmnotes",
   "GUID": "rev01600",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Hypochondria",
   "Tags": [

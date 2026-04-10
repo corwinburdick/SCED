@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62592696799946917/1F44231052726F4AAB726D30F663A35112134368/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/UncannySpecimen.tdc039.gmnotes",
   "GUID": "tdc039",
-  "HideWhenFaceDown": true,
   "LuaScript": "require(\"playercards/cards/UncannySpecimen\")",
   "Name": "CardCustom",
   "Nickname": "Uncanny Specimen",

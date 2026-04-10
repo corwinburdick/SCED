@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62592696799948609/84EF975088A8DCC1637D155CEC0E336CFAD2EE4E/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Contemplative.tdc088.gmnotes",
   "GUID": "tdc088",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Contemplative",
   "Tags": [

@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/2398822869388381950/88C8A1CCF5D560702965D1A5E239A8F14A030C7D/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "Humanoid. Monster. Serpent. (Advanced)",
   "GMNotes_path": "AllPlayerCards.15bb07/SerpentsofYig.678392.gmnotes",
   "GUID": "678392",
-  "HideWhenFaceDown": true,
   "LuaScript": "require(\"playercards/cards/SerpentsofYigAdvanced\")",
   "Name": "CardCustom",
   "Nickname": "Serpents of Yig",

@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62586906401293248/521D5A2D6575239231D543AC7B69C2720A3D5A39/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/QuickShot3.tdc031.gmnotes",
   "GUID": "tdc031",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "QuickShot (3)",
   "Tags": [

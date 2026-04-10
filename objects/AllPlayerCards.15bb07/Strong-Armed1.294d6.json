@@ -7,8 +7,7 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/15369196187476387378/197E1FDCE6BA659FE7B5FC7F54BAFC2A6550311A/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "CustomUIAssets": [
@@ -20,7 +19,6 @@
   ],
   "GMNotes_path": "AllPlayerCards.15bb07/Strong-Armed1.294d6.gmnotes",
   "GUID": "294d6",
-  "HideWhenFaceDown": true,
   "LuaScript": "require(\"playercards/CardsThatRedrawTokens\")",
   "Name": "Card",
   "Nickname": "Strong-Armed (1)",

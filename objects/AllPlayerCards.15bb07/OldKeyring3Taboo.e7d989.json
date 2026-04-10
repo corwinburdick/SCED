@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/2424696374457366817/24320F623E28A33D70A3AB7C4C13484F64862080/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/OldKeyring3Taboo.e7d989.gmnotes",
   "GUID": "e7d989",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Old Keyring (3) (Taboo)",
   "Tags": [

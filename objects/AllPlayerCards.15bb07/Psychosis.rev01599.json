@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/15719687176648888168/A979BF54516341F6D273E2C9A6A0A0111532BF4F/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "Basic Weakness",
   "GMNotes_path": "AllPlayerCards.15bb07/Psychosis.rev01599.gmnotes",
   "GUID": "rev01599",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Psychosis",
   "Tags": [

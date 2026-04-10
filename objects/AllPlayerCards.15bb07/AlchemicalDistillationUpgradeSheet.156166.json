@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1829048801001675240/93B59C1A3D29C3B34A9184C0C67F485777F913CB/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes": "{\n  \"id\": \"09040-c\",\n  \"type\": \"UpgradeSheet\",\n  \"cycle\": \"The Scarlet Keys\"\n}",
   "GUID": "156166",
   "Hands": false,
-  "HideWhenFaceDown": true,
   "LuaScript": "require(\"playercards/customizable/AlchemicalDistillationUpgradeSheet\")",
   "Name": "CardCustom",
   "Nickname": "Alchemical Distillation Upgrade Sheet",

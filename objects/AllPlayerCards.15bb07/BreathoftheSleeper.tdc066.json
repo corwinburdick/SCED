@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62592696799947815/E7B560833C29327C88C07B0FBC40B6765009D013/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/BreathoftheSleeper.tdc066.gmnotes",
   "GUID": "tdc066",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Breath of the Sleeper",
   "Tags": [

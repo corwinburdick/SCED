@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/15752198547002067917/C37D6B5003D6FAEE883199A60D53F73A4067F1E3/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/TheDirgeofReason.fe68c6.gmnotes",
   "GUID": "fe68c6",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "The Dirge of Reason",
   "Tags": [

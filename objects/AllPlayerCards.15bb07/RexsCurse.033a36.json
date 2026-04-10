@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/2414565357243142499/838D53FA16318A3141B6F5875B11F6B87FA7C37F/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "Advanced",
   "GMNotes_path": "AllPlayerCards.15bb07/RexsCurse.033a36.gmnotes",
   "GUID": "033a36",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Rex's Curse",
   "Tags": [

@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62592696799947190/EFBB10E3A4037E05E733C00F0D844C98412311E5/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "Prophetic Timepiece",
   "GMNotes_path": "AllPlayerCards.15bb07/Antikythera5.tdc049.gmnotes",
   "GUID": "tdc049",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Antikythera (5)",
   "Tags": [

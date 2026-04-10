@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62581922061939917/B6BCEF4BB1C0B89F57E36B10687F881E4D79B7AD/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Pathfinder1Taboo.305e37.gmnotes",
   "GUID": "305e37",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Pathfinder (1) (Taboo)",
   "Tags": [

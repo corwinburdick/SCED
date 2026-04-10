@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/18165861198580492185/070F83C5237405D422FCEA3A6F36840C6025135D/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/SwiftReflexesTaboo.c2d212.gmnotes",
   "GUID": "c2d212",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Swift Reflexes (Taboo)",
   "Tags": [

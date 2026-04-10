@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/11534183565218337810/9EC924E4D2A0DDFE23F69B88D3419886D3AB30A0/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/CrypticResearch4.rev01543.gmnotes",
   "GUID": "rev01543",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Cryptic Research (4)",
   "Tags": [

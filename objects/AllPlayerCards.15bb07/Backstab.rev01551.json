@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/14911326179682448430/31377F5F83B40BDEAC1944C352D3D092CBB01A25/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Backstab.rev01551.gmnotes",
   "GUID": "rev01551",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Backstab",
   "Tags": [

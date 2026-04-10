@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62592696799948498/B9EC4C101DFCE731711ED07C7EF128B773A4F9A9/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/UnconventionalMethod.tdc087.gmnotes",
   "GUID": "tdc087",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Unconventional Method",
   "Tags": [

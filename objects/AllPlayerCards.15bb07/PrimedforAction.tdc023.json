@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62592696799946397/515DFFEAAF8BE7EA991484BFD3EDDE8E6F08A2DF/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/PrimedforAction.tdc023.gmnotes",
   "GUID": "tdc023",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Primed for Action",
   "Tags": [

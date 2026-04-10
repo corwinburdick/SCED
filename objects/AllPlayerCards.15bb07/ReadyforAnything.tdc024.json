@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62584543539321937/D92AC06FB563F3D1197C8EDE3D026E11E6BF6A36/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/ReadyforAnything.tdc024.gmnotes",
   "GUID": "tdc024",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Ready for Anything",
   "Tags": [

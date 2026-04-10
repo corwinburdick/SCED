@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/17386553448749317213/B889236E4CAE461FC73A8ED11B3261ADF7FB858F/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Flashlight.rev01587.gmnotes",
   "GUID": "rev01587",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Flashlight",
   "Tags": [

@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62586906413676496/AA83A2BFEA0823DED4AD37F2D3FA1DC123F59C93/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/HuntersMark1.tdc026.gmnotes",
   "GUID": "tdc026",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Hunter's Mark (1)",
   "Tags": [

@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/10450404928002391247/D35BB265BD2DB042599481CA7B6F7FE75E8DD08E/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Hyperawareness.rev01534.gmnotes",
   "GUID": "rev01534",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Hyperawareness",
   "Tags": [

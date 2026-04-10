@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/17518199005103838520/F5D6326638063AD2AAA9554C018343395FC4487F/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/BeatCop.rev01518.gmnotes",
   "GUID": "rev01518",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Beat Cop",
   "Tags": [

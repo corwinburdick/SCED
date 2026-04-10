@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62592696799947651/894535AA3892EC756C960DC1C0344C95B223DB3E/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/CrackShot.tdc057.gmnotes",
   "GUID": "tdc057",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Crack Shot",
   "Tags": [

@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/15478075157214864665/C480BC7617B3D634FAFD754341C5BE6992A40D8F/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/ExtraAmmunition1.rev01526.gmnotes",
   "GUID": "rev01526",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Extra Ammunition (1)",
   "Tags": [

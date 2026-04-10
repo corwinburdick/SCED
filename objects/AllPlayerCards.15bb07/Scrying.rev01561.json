@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/12717870991547670387/816741A166F3A2AA0ACF564D39EC71EA6EA2CABB/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Scrying.rev01561.gmnotes",
   "GUID": "rev01561",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Scrying",
   "Tags": [

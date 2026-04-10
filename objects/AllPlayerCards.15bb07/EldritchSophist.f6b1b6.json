@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/1537373727958826520/EE54EF6510734FC86ADD47E84DB253493A2F87B7/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/EldritchSophist.f6b1b6.gmnotes",
   "GUID": "f6b1b6",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Eldritch Sophist",
   "Tags": [

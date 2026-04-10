@@ -7,14 +7,12 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/17004866957150009533/9915408EC83825F1CC472DF4015E31A6360F9169/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "Description": "Enemy",
   "GMNotes_path": "AllPlayerCards.15bb07/MobEnforcer.rev01601.gmnotes",
   "GUID": "rev01601",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Mob Enforcer",
   "Tags": [

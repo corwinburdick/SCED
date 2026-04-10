@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/17843562485424075096/ACB2379502103A67157E731B12A3DAE9F15393E0/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/Resilience.12021.gmnotes",
   "GUID": "12021",
-  "HideWhenFaceDown": true,
   "Name": "Card",
   "Nickname": "Resilience",
   "Tags": [

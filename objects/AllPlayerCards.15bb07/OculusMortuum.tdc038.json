@@ -7,13 +7,11 @@
       "FaceURL": "https://steamusercontent-a.akamaihd.net/ugc/62592696799946821/9D89EED6B537E53A7159826DD27287F707C3738B/",
       "NumHeight": 1,
       "NumWidth": 1,
-      "Type": 0,
-      "UniqueBack": true
+      "Type": 0
     }
   },
   "GMNotes_path": "AllPlayerCards.15bb07/OculusMortuum.tdc038.gmnotes",
   "GUID": "tdc038",
-  "HideWhenFaceDown": true,
   "Name": "CardCustom",
   "Nickname": "Oculus Mortuum",
   "Tags": [
