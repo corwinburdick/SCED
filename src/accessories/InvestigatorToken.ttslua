@@ -1,35 +1,40 @@
-isHighlightOn = false
+local highlightColor
 
-function updateSave(playerColor)
-  self.script_state = JSON.encode({ playerColor = playerColor, isHighlightOn = isHighlightOn })
+function updateSave()
+  self.script_state = JSON.encode({ highlightColor = highlightColor })
 end
 
 function onLoad(savedData)
   if savedData and savedData ~= "" then
     local loadedData = JSON.decode(savedData)
-    isHighlightOn = loadedData.isHighlightOn
-    playerColor = loadedData.playerColor
+    highlightColor   = loadedData.highlightColor
   end
 
-  if isHighlightOn then
-    addHighlight(playerColor)
+  addHighlight(highlightColor)
+  updateContextMenu()
+end
+
+function updateContextMenu()
+  self.clearContextMenu()
+
+  if highlightColor then
+    self.addContextMenuItem("Highlight Off", removeHighlight)
   else
     self.addContextMenuItem("Highlight Token", addHighlight)
   end
 end
 
 function addHighlight(playerColor)
+  if not playerColor or playerColor == "Black" then return end
   self.highlightOn(playerColor)
-  self.clearContextMenu()
-  self.addContextMenuItem("Highlight Off", removeHighlight)
-  isHighlightOn = true
-  updateSave(playerColor)
+  highlightColor = playerColor
+  updateSave()
+  updateContextMenu()
 end
 
-function removeHighlight(playerColor)
+function removeHighlight()
   self.highlightOff()
-  self.clearContextMenu()
-  self.addContextMenuItem("Highlight Token", addHighlight)
-  isHighlightOn = false
-  updateSave(playerColor)
+  highlightColor = nil
+  updateSave()
+  updateContextMenu()
 end

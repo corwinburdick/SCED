@@ -462,9 +462,9 @@ function doUpkeep(player, clickType)
   end
 
   -- flip investigator tokens
-  for _, obj in ipairs(getObjectsWithTag("Investigator Token")) do
+  for _, obj in ipairs(getObjectsWithTag("InvestigatorToken")) do
     if obj.is_face_down then
-        obj.flip()
+      obj.flip()
     end
   end
 

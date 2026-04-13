@@ -4,7 +4,7 @@
     "g": 1,
     "r": 1
   },
-  "ContainedObjects_path": "Investigatortoken.abd142",
+  "ContainedObjects_path": "Guardian.abd142",
   "CustomImage": {
     "CustomTile": {
       "Stackable": false,
@@ -31,7 +31,7 @@
     "5": "Survivor.abd146"
   },
   "Tags": [
-    "Investigator Token"
+    "InvestigatorToken"
   ],
   "Transform": {
     "scaleX": 1,

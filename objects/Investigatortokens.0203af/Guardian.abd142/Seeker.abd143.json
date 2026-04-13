@@ -12,19 +12,19 @@
       "Type": 2
     },
     "ImageScalar": 1,
-    "ImageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/11106704706603457114/3081B44E3DAEF944AF72733D9332ABADFEDC780B/",
-    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/9636656185503244840/CD2F55BE2F963C6CF3DA299CC2F4FA5528FA876B/",
+    "ImageSecondaryURL": "https://steamusercontent-a.akamaihd.net/ugc/16067172632375150659/9FE3D15CA6A67CF5F8B07DC59E6A0DD798FC5BC5/",
+    "ImageURL": "https://steamusercontent-a.akamaihd.net/ugc/14656574939506513070/BEB5EE0E150E2FEE0131F72E95CEF24F674E46F1/",
     "WidthScale": 0
   },
-  "GUID": "abd145",
+  "GUID": "abd143",
   "Hands": false,
   "HideWhenFaceDown": false,
   "LuaScript": "require(\"accessories/InvestigatorToken\")",
   "Name": "Custom_Tile",
-  "Nickname": "Mystic",
+  "Nickname": "Seeker",
   "Snap": false,
   "Tags": [
-    "Investigator Token"
+    "InvestigatorToken"
   ],
   "Transform": {
     "scaleX": 1,

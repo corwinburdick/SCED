@@ -5,7 +5,7 @@
     "b": 0.197659791
   },
   "ContainedObjects_order": [
-    "Investigatortoken.abd142"
+    "Guardian.abd142"
   ],
   "ContainedObjects_path": "Investigatortokens.0203af",
   "CustomMesh": {
@@ -19,14 +19,12 @@
   "HideWhenFaceDown": false,
   "Locked": true,
   "Name": "Custom_Model_Infinite_Bag",
-  "Nickname": "Investigator tokens",
+  "Nickname": "Investigator Tokens",
   "Transform": {
     "posX": -54.83,
     "posY": 1.58,
     "posZ": -84.24,
-    "rotX": 0,
-    "rotY": 305,
-    "rotZ": 0,
+    "rotY": 270,
     "scaleX": 0.8,
     "scaleY": 1,
     "scaleZ": 0.8
