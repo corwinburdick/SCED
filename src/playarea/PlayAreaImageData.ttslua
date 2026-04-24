@@ -724,6 +724,10 @@ PLAYAREA_IMAGE_DATA = {
       {
         Name = "The Blob That Ate Everything 2",
         URL = "https://steamusercontent-a.akamaihd.net/ugc/2279446315725488396/9CC07F923BD1CBFC4BB06DD2CC6747D2C3541737/"
+      },
+      {
+        Name = "The Blob That Ate Everything 3",
+        URL = "https://steamusercontent-a.akamaihd.net/ugc/13612725590632946209/1E7692D78DA43A98BE8C2D491193B42B2532D551/"
       }
     },
     ["Carnevale of Horrors"] = {
