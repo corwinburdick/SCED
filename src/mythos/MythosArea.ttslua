@@ -291,10 +291,19 @@ function fireScenarioChangedEvent(md)
     end
   end
 
-  -- shuffle encounter deck
-  local objects = getEncounterDeckObjects()
-  if objects.draw then
-    objects.draw.shuffle()
+  -- shuffle encounter deck if there is no player in the Black seat ("debug mode")
+
+  for _, player in ipairs(Player.getPlayers()) do
+    if player.color == "Black" then
+      blackSeatUsed = true
+    end
+  end
+
+  if not blackSeatUsed then
+    local objects = getEncounterDeckObjects()
+    if objects.draw then
+      objects.draw.shuffle()
+    end
   end
 
   -- flip scenario card to Hard/Expert
