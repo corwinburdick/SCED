@@ -293,7 +293,9 @@ function fireScenarioChangedEvent(md)
 
   -- shuffle encounter deck
   local objects = getEncounterDeckObjects()
-  objects.draw.shuffle()
+  if objects.draw then
+    objects.draw.shuffle()
+  end
 
   -- flip scenario card to Hard/Expert
   if GlobalApi.getOptionPanelState()['defaultHardExpert'] then
