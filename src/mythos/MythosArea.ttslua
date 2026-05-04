@@ -300,16 +300,7 @@ function fireScenarioChangedEvent(md)
   end
 
   -- shuffle encounter deck if there is no player in the Black seat ("debug mode")
-
-  local blackSeatUsed = false
-
-  for _, player in ipairs(Player.getPlayers()) do
-    if player.color == "Black" then
-      blackSeatUsed = true
-    end
-  end
-
-  if not blackSeatUsed then
+  if not Player["Black"].seated then
     local objects = getEncounterDeckObjects()
     if objects.draw then
       objects.draw.shuffle()
