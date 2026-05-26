@@ -770,6 +770,8 @@ function shiftContents(playerColor, direction)
   Wait.time(drawBaseConnections, 0.1)
 end
 
+-- Rotate all objects on the play area around the middle snap point
+---@param directionOrDegrees string|number "clockwise" / "counterclockwise" for 15° rotation or rotation degrees
 function rotateContents(directionOrDegrees)
   local zone = GUIDReferenceApi.getObjectByOwnerAndType("Mythos", "PlayAreaZone")
   if not zone then
@@ -778,7 +780,7 @@ function rotateContents(directionOrDegrees)
   end
 
   -- determine rotation degrees
-  local degrees
+  local degrees = directionOrDegrees
   if directionOrDegrees == "clockwise" then
     degrees = -15
   elseif directionOrDegrees == "counterclockwise" then
@@ -805,10 +807,10 @@ function rotateContents(directionOrDegrees)
       local newX        = x * cosRad - y * sinRad
       local newY        = x * sinRad + y * cosRad
 
-      -- check if close to multiple of 90 and maybe snap
+      -- check if close to multiple of 90 and maybe round
       if math.abs(MathLib.roundToMultiple(newRotation.y, 90) - newRotation.y) < 5 then
-        newX = snapIfClose(newX)
-        newY = snapIfClose(newY)
+        newX = roundIfClose(newX)
+        newY = roundIfClose(newY)
       end
 
       -- determine new global position
@@ -821,13 +823,11 @@ function rotateContents(directionOrDegrees)
   Wait.time(drawBaseConnections, 0.1)
 end
 
--- Helper function for conditional snapping to 0.5 increments
-function snapIfClose(val)
-  local nearestHalf = MathLib.roundToMultiple(val, 0.5)
-
-  -- Check if the actual value is close to the nearest 0.5 step
-  if math.abs(val - nearestHalf) < 0.1 then
-    return nearestHalf
+-- Helper function for conditional rounding
+function roundIfClose(val)
+  local nearestRounded = MathLib.roundToMultiple(val, 0.25)
+  if math.abs(val - nearestRounded) < 0.05 then
+    return nearestRounded
   end
   return val
 end
