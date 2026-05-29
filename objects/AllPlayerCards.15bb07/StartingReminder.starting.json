@@ -12,16 +12,20 @@
   },
   "GMNotes_path": "AllPlayerCards.15bb07/StartingReminder.starting.gmnotes",
   "GUID": "starting",
+  "LuaScript": "require(\"playercards/cards/StartingReminder\")",
   "Name": "Card",
   "Nickname": "Starting Reminder",
   "Tags": [
     "Asset",
-    "PlayerCard"
+    "PlayerCard",
+    "CardWithHelper",
+    "i18n_XML"
   ],
   "Transform": {
     "rotY": 270,
     "scaleX": 1,
     "scaleY": 1,
     "scaleZ": 1
-  }
+  },
+  "XmlUI": "<Include src=\"playercards/StartingReminder.xml\"/>"
 }

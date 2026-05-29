@@ -321,6 +321,8 @@ function loadCards(slots, investigatorId, bondedList, deckMeta, playerColor, loa
     end
   end
 
+  -- loop through card list
+  local shouldAddStartingReminder = false
   for cardId, cardCount in pairs(slots) do
     local card = AllCardsBagApi.getCardById(cardId)
     if card ~= nil then
@@ -339,9 +341,24 @@ function loadCards(slots, investigatorId, bondedList, deckMeta, playerColor, loa
       end
 
       slots[cardId] = 0
+
+      -- look for starting cards
+      if card.metadata.starting then
+        shouldAddStartingReminder = true
+      end
     end
 
     resourceModifier = resourceModifier + cardCount * getStartingResourceModifier(cardId)
+  end
+
+  -- maybe add starting reminder
+  if shouldAddStartingReminder then
+    local card = AllCardsBagApi.getCardById("starting")
+    table.insert(cardsToSpawn, {
+      data     = card.data,
+      metadata = card.metadata,
+      zone     = startsInPlayTracker()
+    })
   end
 
   updateStartingResources(playerColor, resourceModifier)
