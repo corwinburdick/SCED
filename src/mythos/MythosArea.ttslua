@@ -398,7 +398,7 @@ function actualEncounterCardDraw(card, params, sentReshuffleMessage)
   DeckLib.placeOrMergeIntoDeck(card, params.position, rot)
 
   if sentReshuffleMessage then
-    broadcastToAll("Last encounter card: Reshuffle the encounter deck after it's resolved.")
+    broadcastToAll("Last encounter card: Reshuffle the encounter deck after resolving it.")
   end
 end
 
