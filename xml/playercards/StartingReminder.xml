@@ -10,6 +10,7 @@
   color="#377a0080">
   <Text id="CARD_StartingReminder_text"
     text="Search Starting Cards"
+    font="font_teutonic-arkham"
     color="White"
     resizeTextForBestFit="true"
     resizeTextMaxSize="500"/>

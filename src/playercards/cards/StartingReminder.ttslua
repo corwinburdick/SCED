@@ -51,7 +51,7 @@ function searchStartingCards(player)
   if count == 0 then
     printToColor("Your deck does not contain any starting cards.", triggeringColor, "Orange")
   elseif count > 1 then
-    printToColor(
+    broadcastToColor(
       "Choose one card among the starting cards that were added by this to your hand and return the others to your deck.",
       triggeringColor, "Green")
   end
