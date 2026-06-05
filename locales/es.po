@@ -34,13 +34,13 @@ msgstr ""
 
 # Option: set default difficulty to Hard/Expert
 msgid "OP_defaultHardExpert"
-msgstr "Set difficulty to Hard/Expert"
+msgstr "Establece dificultad Difícil/Experto"
 
 # Tooltip: set default difficulty to Hard/Expert
 msgid "OP_defaultHardExpert_tooltip"
 msgstr ""
-"Set the scenario reference card\n"
-"to Hard/Expert by default."
+"Establece la carta de referencia de escenario\n"
+"a Difícil/Experto por defecto."
 
 # Option: splash scenario name on setup
 msgid "OP_showTitleSplash"
@@ -459,14 +459,14 @@ msgstr "Descargar"
 
 msgid "DW_arkhambuild_tooltip"
 msgstr ""
-"arkham.build - linked: This content can be\n"
-"automatically loaded when used in decks."
+"arkham.build - enlazado: Este contenido\n"
+"se carga automáticamente cuando se usa en mazos."
 
 msgid "DW_scenarios"
-msgstr "Scenarios"
+msgstr "Escenarios"
 
 msgid "DW_by"
-msgstr "by"
+msgstr "por"
 
 # Play Area Gallery: Title
 msgid "PAG_title"
@@ -611,7 +611,7 @@ msgid "CARD_TheRedClock_place_text"
 msgstr "Colocar"
 
 msgid "CARD_StartingReminder_text"
-msgstr "Search Starting Cards"
+msgstr "Busca cartas Iniciales"
 
 # Playermat: Option Panel
 msgid "PM_title_text"
