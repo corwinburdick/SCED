@@ -43,6 +43,17 @@ FALLBACK_MIRRORS = {
 
 -- these can be loaded by right-clicking the option panel button
 OPTION_PRESETS           = {
+  Corwin = {
+    showTokenSplash      = true,
+    showDrawButton       = true,
+    tableSetup           = "Rotated (2P)",
+    showAttachmentHelper = true,
+    showDisplacementTool = true,
+    showHandHelper       = true,
+    showSearchAssistant  = true,
+    skipTour             = true,
+    useResourceCounters  = "Chef's Selection"
+  },
   Chr1Z = {
     changePlayAreaImage  = true,
     defaultHardExpert    = true,

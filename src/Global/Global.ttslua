@@ -204,6 +204,12 @@ function onLoad(savedData)
   -- potentially remove the tour if the player's preset contains that option
   maybeRemoveTourStarter()
 
+  -- auto-load the personal preset for this fork (hardcoded)
+  -- loads the preset named "Corwin" on startup so personal settings apply automatically
+  if OPTION_PRESETS and OPTION_PRESETS["Corwin"] then
+    Wait.time(function() loadOptionPanelState(OPTION_PRESETS["Corwin"], true) end, getXmlDelay())
+  end
+
   getModVersion()
   updateHandVisibility()
   TokenManager.initialize()
