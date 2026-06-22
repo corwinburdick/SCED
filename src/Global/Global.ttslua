@@ -63,6 +63,8 @@ local DW_TAB_IDS                  = {
 
 -- optionPanel data (intentionally not local!)
 optionPanel                       = {}
+-- when true, helper spawns should not ping the table (used during preset loads)
+suppressSpawnPing                 = false
 local sentOptionPanelMessage      = {}
 local DROPDOWN_DATA               = {
   tableSetup = {
@@ -207,7 +209,11 @@ function onLoad(savedData)
   -- auto-load the personal preset for this fork (hardcoded)
   -- loads the preset named "Corwin" on startup so personal settings apply automatically
   if OPTION_PRESETS and OPTION_PRESETS["Corwin"] then
-    Wait.time(function() loadOptionPanelState(OPTION_PRESETS["Corwin"], true) end, getXmlDelay())
+    Wait.time(function()
+      suppressSpawnPing = true
+      loadOptionPanelState(OPTION_PRESETS["Corwin"], true)
+      suppressSpawnPing = false
+    end, getXmlDelay())
   end
 
   getModVersion()
@@ -4130,9 +4136,11 @@ end
 function spawnOrRemoveHelper(state, name, position, rotation, owner)
   local spawnedGUID
   if state then
-    local pingPlayer = Player.getPlayers()[1]
-    if pingPlayer.color ~= "Grey" then
-      pingPlayer.pingTable(position)
+    if not suppressSpawnPing then
+      local pingPlayer = Player.getPlayers()[1]
+      if pingPlayer.color ~= "Grey" then
+        pingPlayer.pingTable(position)
+      end
     end
     spawnedGUID = spawnHelperObject(name, position, rotation).getGUID()
   else
